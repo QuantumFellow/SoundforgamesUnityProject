@@ -91,12 +91,18 @@ Triggered: On Start</value>
 		<property name="streaming">
 			<value>true</value>
 		</property>
+		<relationship name="modules">
+			<destination>{dd29eb6e-1cbe-412c-8aca-ff1035257fe8}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{d60f3f9a-8342-4a53-b205-f7fe3edd9daf}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{f4ffe6ab-786a-49e1-bb13-fde3fceffa4b}" />
 	<object class="ParameterProxy" id="{ad58c3a7-2bc9-0263-14d6-c1fa1cb73367}">
+		<relationship name="modules">
+			<destination>{dd29eb6e-1cbe-412c-8aca-ff1035257fe8}</destination>
+		</relationship>
 		<relationship name="preset">
 			<destination>{aa8da718-ca68-44ee-b0fe-94a5a7b327b3}</destination>
 		</relationship>
@@ -126,6 +132,11 @@ Triggered: On Start</value>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{bac17b5c-96b3-46d9-95d9-af91d0bd73e7}" />
+	<object class="EventSound" id="{dd29eb6e-1cbe-412c-8aca-ff1035257fe8}">
+		<relationship name="event">
+			<destination>{09090467-3681-4145-9c22-1cd139689db3}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{d60f3f9a-8342-4a53-b205-f7fe3edd9daf}">
 		<property name="name">
 			<value>Audio 1</value>
