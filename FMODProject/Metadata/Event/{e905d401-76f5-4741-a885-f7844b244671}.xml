@@ -129,6 +129,9 @@ Triggered: When the feet of the character animation touch the floor.
 	</object>
 	<object class="MixerBusPanner" id="{bb9c6e68-8990-41bf-8380-209255d19884}" />
 	<object class="MultiSound" id="{99525ef2-f908-488c-aa88-7110a6ed96ac}">
+		<property name="startOffset">
+			<value>49.5</value>
+		</property>
 		<property name="volume">
 			<value>3</value>
 		</property>
@@ -170,6 +173,7 @@ Triggered: When the feet of the character animation touch the floor.
 	<object class="MixerBusEffectChain" id="{098d2167-900f-4b62-909f-1a7c82abb11c}">
 		<relationship name="effects">
 			<destination>{339a915c-b6a1-4c50-a1b7-2c9119e467ee}</destination>
+			<destination>{4d30b303-8dd5-44d5-8c06-1b443d68af02}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9602f0fc-a67c-4d68-af63-419d9c248976}">
@@ -271,5 +275,31 @@ Triggered: When the feet of the character animation touch the floor.
 	</object>
 	<object class="MixerBusPanner" id="{4e064594-4d56-49e7-a721-e5dba6f1d8fa}" />
 	<object class="MixerBusFader" id="{339a915c-b6a1-4c50-a1b7-2c9119e467ee}" />
+	<object class="MultibandEqEffect" id="{4d30b303-8dd5-44d5-8c06-1b443d68af02}">
+		<property name="filterTypeB">
+			<value>7</value>
+		</property>
+		<property name="filterTypeC">
+			<value>8</value>
+		</property>
+		<property name="frequencyA">
+			<value>13105.917</value>
+		</property>
+		<property name="frequencyB">
+			<value>134.544098</value>
+		</property>
+		<property name="frequencyC">
+			<value>1793.24646</value>
+		</property>
+		<property name="qualityA">
+			<value>0.581413805</value>
+		</property>
+		<property name="gainB">
+			<value>-14.4827595</value>
+		</property>
+		<property name="gainC">
+			<value>-0.517240524</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{968cff76-59b3-4cd1-b199-d797131da202}" />
 </objects>

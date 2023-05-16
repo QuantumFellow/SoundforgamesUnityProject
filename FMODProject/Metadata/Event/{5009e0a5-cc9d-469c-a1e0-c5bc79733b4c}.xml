@@ -12,7 +12,7 @@ Triggered: if the ants velocity exceeds 2 (if the player runs into them etc).</v
 			<value>Ant</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{0fc016a5-8380-4eec-bfd5-e89d1d317145}</destination>
@@ -79,11 +79,18 @@ Triggered: if the ants velocity exceeds 2 (if the player runs into them etc).</v
 	</object>
 	<object class="MarkerTrack" id="{bbf75699-cc0f-4b13-84f2-8574f64b74d9}" />
 	<object class="GroupTrack" id="{4fc0a554-16db-41f2-b4cc-9cac3e2e8369}">
+		<relationship name="modules">
+			<destination>{c62e6f99-c7c6-4dbd-86d1-cf98ed85fb35}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{18bae859-0825-4943-bc07-f0615c6d30bf}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{272c70e4-8d0a-42b5-8edc-9cafb76ecbb9}" />
+	<object class="Timeline" id="{272c70e4-8d0a-42b5-8edc-9cafb76ecbb9}">
+		<relationship name="modules">
+			<destination>{c62e6f99-c7c6-4dbd-86d1-cf98ed85fb35}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{0bcf7e6c-7830-429a-bed8-6e394b6967b4}">
 		<relationship name="effectChain">
 			<destination>{634a4dec-64a1-462b-bbc2-1d5f04a94752}</destination>
@@ -101,6 +108,29 @@ Triggered: if the ants velocity exceeds 2 (if the player runs into them etc).</v
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ba674e75-08c5-4197-b304-8b38617d0e14}" />
+	<object class="MultiSound" id="{c62e6f99-c7c6-4dbd-86d1-cf98ed85fb35}">
+		<property name="length">
+			<value>0.76271186440677963</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{5d9a8b27-cea2-4f15-8371-618d89db4622}</destination>
+		</relationship>
+		<relationship name="sounds">
+			<destination>{1ec3b2a9-7391-4f16-8afb-de6b2849f3c4}</destination>
+			<destination>{cf8fa231-dba5-4d51-9c88-175cc5ebc035}</destination>
+			<destination>{ff834486-3261-4f93-bc2f-24a60eaa329b}</destination>
+			<destination>{3c20c13e-9bbc-46f4-9579-e8d0fae69e0d}</destination>
+			<destination>{c093b2b2-82b1-44bc-af75-28c9c697f0ff}</destination>
+			<destination>{6044f5eb-b2d1-49a3-b206-59b8ca94a2d9}</destination>
+			<destination>{11af60ba-2cf8-41f2-90c5-3c0066ef0490}</destination>
+			<destination>{a6ccc70a-192e-4c15-be61-86e04b431da4}</destination>
+			<destination>{79707827-cbf0-4743-a8b2-25cb0d2badd6}</destination>
+			<destination>{11f671af-984a-4440-95b0-2cf12451a801}</destination>
+			<destination>{b023fdde-d697-4f46-9dd1-4836182685bf}</destination>
+			<destination>{c313d90a-424a-4bf4-baec-7679b08f074c}</destination>
+			<destination>{2a444120-64f8-4c36-87e7-5f97ffe0f176}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{18bae859-0825-4943-bc07-f0615c6d30bf}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -118,10 +148,84 @@ Triggered: if the ants velocity exceeds 2 (if the player runs into them etc).</v
 	<object class="MixerBusEffectChain" id="{634a4dec-64a1-462b-bbc2-1d5f04a94752}">
 		<relationship name="effects">
 			<destination>{65d96ddf-b1d7-4248-b4ea-e371bb6d8570}</destination>
+			<destination>{79e0ee26-000b-42db-9069-05e04f814abf}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d494ccd0-d4ce-409d-879e-0c2cd6743ff7}" />
 	<object class="MixerBusFader" id="{0a5b3946-ed56-4d66-8a38-0b109247c0fa}" />
+	<object class="RandomizerModulator" id="{5d9a8b27-cea2-4f15-8371-618d89db4622}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>28.5</value>
+		</property>
+	</object>
+	<object class="SingleSound" id="{1ec3b2a9-7391-4f16-8afb-de6b2849f3c4}">
+		<relationship name="audioFile">
+			<destination>{f0edc86e-191c-4dee-8aa0-27be84b95640}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{cf8fa231-dba5-4d51-9c88-175cc5ebc035}">
+		<relationship name="audioFile">
+			<destination>{cc8e9d4e-1630-4238-8c5f-f4f7370bc63a}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{ff834486-3261-4f93-bc2f-24a60eaa329b}">
+		<relationship name="audioFile">
+			<destination>{3134f6ae-4791-4a7e-93a6-0c76d101ff9c}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{3c20c13e-9bbc-46f4-9579-e8d0fae69e0d}">
+		<relationship name="audioFile">
+			<destination>{78821163-a446-4aef-a2e8-feddd6f819d2}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{c093b2b2-82b1-44bc-af75-28c9c697f0ff}">
+		<relationship name="audioFile">
+			<destination>{6c047e36-d667-46cd-a136-79e7f0e3bc84}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{6044f5eb-b2d1-49a3-b206-59b8ca94a2d9}">
+		<relationship name="audioFile">
+			<destination>{b019f8be-9304-442b-b7fd-bcffa7589b78}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{11af60ba-2cf8-41f2-90c5-3c0066ef0490}">
+		<relationship name="audioFile">
+			<destination>{d5c86c0d-f8d2-4f95-875f-a5435a515c9c}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{a6ccc70a-192e-4c15-be61-86e04b431da4}">
+		<relationship name="audioFile">
+			<destination>{c6d804cd-6205-4079-b7e1-0ab41fb0ea29}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{79707827-cbf0-4743-a8b2-25cb0d2badd6}">
+		<relationship name="audioFile">
+			<destination>{acf12e63-4911-4961-a024-6c81394fc2ad}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{11f671af-984a-4440-95b0-2cf12451a801}">
+		<relationship name="audioFile">
+			<destination>{1108ce3d-bb4c-403f-a59f-c0f040a1ccf4}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{b023fdde-d697-4f46-9dd1-4836182685bf}">
+		<relationship name="audioFile">
+			<destination>{be6c4ccc-89b2-4d5f-a433-c63743b7e4d1}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{c313d90a-424a-4bf4-baec-7679b08f074c}">
+		<relationship name="audioFile">
+			<destination>{9583a8eb-e120-446a-a41c-70e7b58ab5a8}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{2a444120-64f8-4c36-87e7-5f97ffe0f176}">
+		<relationship name="audioFile">
+			<destination>{80d2a03c-71bd-4a7d-abcc-7c37bea2009a}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{7d44f086-d810-4638-bc1d-443158788e6f}">
 		<relationship name="effects">
 			<destination>{0d2ef557-716e-4c81-a870-ba2bbc237a1a}</destination>
@@ -129,5 +233,13 @@ Triggered: if the ants velocity exceeds 2 (if the player runs into them etc).</v
 	</object>
 	<object class="MixerBusPanner" id="{1765fab4-04f3-441e-aef3-bceb7ec3c219}" />
 	<object class="MixerBusFader" id="{65d96ddf-b1d7-4248-b4ea-e371bb6d8570}" />
+	<object class="SpatialiserEffect" id="{79e0ee26-000b-42db-9069-05e04f814abf}">
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>10</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{0d2ef557-716e-4c81-a870-ba2bbc237a1a}" />
 </objects>

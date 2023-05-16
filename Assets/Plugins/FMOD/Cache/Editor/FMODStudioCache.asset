@@ -167,10 +167,10 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638195752641000145
+  lastModified: 638198583026118802
   FileSizes:
   - Name: Desktop
-    Value: 132768
+    Value: 340064
   Exists: 1
 --- !u!114 &-7218288516651920230
 MonoBehaviour:
@@ -187,7 +187,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638195752640589187
+  lastModified: 638198583025649981
   FileSizes:
   - Name: Desktop
     Value: 4238
@@ -419,12 +419,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -7470815133711611052}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 10
-  Length: 0
+  Length: 762
 --- !u!114 &-4228794227554585268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,7 +726,7 @@ MonoBehaviour:
   - {fileID: 4450031680838293598}
   StringsBanks:
   - {fileID: -7218288516651920230}
-  cacheTime: 638195752641000145
+  cacheTime: 638198583026118802
   cacheVersion: 10
 --- !u!114 &525602267344705921
 MonoBehaviour:
@@ -856,7 +856,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 4450031680838293598}
   - {fileID: -7470815133711611052}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters:
@@ -936,7 +936,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638195752640605849
+  lastModified: 638198583025675667
   FileSizes:
   - Name: Desktop
     Value: 1416
@@ -989,8 +989,8 @@ MonoBehaviour:
   Banks:
   - {fileID: -7470815133711611052}
   IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
+  Is3D: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: 5560999230158086435}
   MinDistance: 1
@@ -1090,10 +1090,10 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638195752640569193
+  lastModified: 638198583025634921
   FileSizes:
   - Name: Desktop
-    Value: 109536
+    Value: 276000
   Exists: 1
 --- !u!114 &4490606575963264758
 MonoBehaviour:
