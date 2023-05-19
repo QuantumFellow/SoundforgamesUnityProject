@@ -34,6 +34,7 @@ Triggered: When the droid fires a seed</value>
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{f5db1f8e-4bb4-4bbc-9b16-4237f2600d50}</destination>
+			<destination>{7e1ec3c4-63d9-4b70-b4a3-316884086581}</destination>
 		</relationship>
 		<relationship name="timeline">
 			<destination>{2a7c138b-9f65-42fa-b5ad-8fd01bbdfeb0}</destination>
@@ -85,11 +86,27 @@ Triggered: When the droid fires a seed</value>
 	</object>
 	<object class="MarkerTrack" id="{9737319f-e4b0-494b-843b-254c642c8c7b}" />
 	<object class="GroupTrack" id="{f5db1f8e-4bb4-4bbc-9b16-4237f2600d50}">
+		<relationship name="modules">
+			<destination>{7313a961-8d39-480d-bc0a-b051231b78b4}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{889ecc98-ddec-46a4-b660-4977223949ed}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{2a7c138b-9f65-42fa-b5ad-8fd01bbdfeb0}" />
+	<object class="GroupTrack" id="{7e1ec3c4-63d9-4b70-b4a3-316884086581}">
+		<relationship name="modules">
+			<destination>{05c588d7-43f5-4a20-9aca-9ecffb54f192}</destination>
+		</relationship>
+		<relationship name="mixerGroup">
+			<destination>{e837474e-30c0-4b75-b2a1-52d92bfe1e51}</destination>
+		</relationship>
+	</object>
+	<object class="Timeline" id="{2a7c138b-9f65-42fa-b5ad-8fd01bbdfeb0}">
+		<relationship name="modules">
+			<destination>{05c588d7-43f5-4a20-9aca-9ecffb54f192}</destination>
+			<destination>{7313a961-8d39-480d-bc0a-b051231b78b4}</destination>
+		</relationship>
+	</object>
 	<object class="ActionSheet" id="{f67de96a-e458-41fb-99d3-da57834e82e0}">
 		<relationship name="modules">
 			<destination>{e55b2110-0d05-4ab8-a026-c19c13e2ddb3}</destination>
@@ -113,6 +130,20 @@ Triggered: When the droid fires a seed</value>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{6be1623d-dcf1-4531-a863-f9860c46187c}" />
+	<object class="SingleSound" id="{7313a961-8d39-480d-bc0a-b051231b78b4}">
+		<property name="length">
+			<value>0.26544217687074828</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>0.2368707482993197</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{01458193-9d10-4775-9f91-627002e93907}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{889ecc98-ddec-46a4-b660-4977223949ed}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -122,6 +153,31 @@ Triggered: When the droid fires a seed</value>
 		</relationship>
 		<relationship name="panner">
 			<destination>{aadcef2f-0340-4ecb-a322-a4aa0d854094}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{36d9a23b-6342-4430-be3b-62ff9cf4a9e2}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{05c588d7-43f5-4a20-9aca-9ecffb54f192}">
+		<property name="length">
+			<value>0.26544217687074828</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{ddd8ee43-8c28-4387-89e2-0a62045e6d95}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{e837474e-30c0-4b75-b2a1-52d92bfe1e51}">
+		<property name="volume">
+			<value>-13.5</value>
+		</property>
+		<property name="name">
+			<value>Audio 2</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{97c118e3-9898-4211-84b8-d280f5c0222f}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{3db84c17-2566-4071-8a4e-ed0cc8147143}</destination>
 		</relationship>
 		<relationship name="output">
 			<destination>{36d9a23b-6342-4430-be3b-62ff9cf4a9e2}</destination>
@@ -140,10 +196,71 @@ Triggered: When the droid fires a seed</value>
 	<object class="MixerBusFader" id="{d5bc30c0-b714-4235-af0c-b3e30e7802fb}" />
 	<object class="MixerBusEffectChain" id="{e0257377-338a-48cc-972b-6659b4456c1e}">
 		<relationship name="effects">
+			<destination>{ad29fbeb-17a8-4058-b9a2-d8305c6c9535}</destination>
+			<destination>{ce599fd1-7d9d-44c5-b0cc-0ab58ebdb29f}</destination>
 			<destination>{4e985772-7ea7-4ba7-9a5e-289c3b3a72df}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{aadcef2f-0340-4ecb-a322-a4aa0d854094}" />
+	<object class="MixerBusEffectChain" id="{97c118e3-9898-4211-84b8-d280f5c0222f}">
+		<relationship name="effects">
+			<destination>{4030b072-468a-4bc1-95a6-b1ca085a106a}</destination>
+			<destination>{618b26aa-8783-4b9b-accf-d20de7d41aa7}</destination>
+			<destination>{149daf23-0e5f-46f7-96f4-eac5be541d2b}</destination>
+			<destination>{f1d66ae4-0cce-43e9-b868-49de2b17097d}</destination>
+			<destination>{ee3cd9c8-6338-45e5-a510-2e1a8f8a984f}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{3db84c17-2566-4071-8a4e-ed0cc8147143}" />
 	<object class="MixerBusFader" id="{94ffc39a-a42f-424b-944a-65d6f28bc0bc}" />
+	<object class="SFXReverbEffect" id="{ad29fbeb-17a8-4058-b9a2-d8305c6c9535}">
+		<property name="decayTime">
+			<value>260</value>
+		</property>
+		<property name="earlyDelay">
+			<value>0.5</value>
+		</property>
+		<property name="lateDelay">
+			<value>0</value>
+		</property>
+		<property name="HFDecayRatio">
+			<value>21</value>
+		</property>
+		<property name="diffusion">
+			<value>7</value>
+		</property>
+		<property name="lowShelfGain">
+			<value>-29</value>
+		</property>
+		<property name="highCut">
+			<value>6500</value>
+		</property>
+	</object>
+	<object class="DistortionEffect" id="{ce599fd1-7d9d-44c5-b0cc-0ab58ebdb29f}">
+		<property name="level">
+			<value>0.275000006</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{4e985772-7ea7-4ba7-9a5e-289c3b3a72df}" />
+	<object class="TremoloEffect" id="{4030b072-468a-4bc1-95a6-b1ca085a106a}">
+		<property name="frequency">
+			<value>20</value>
+		</property>
+	</object>
+	<object class="PitchShifterEffect" id="{618b26aa-8783-4b9b-accf-d20de7d41aa7}">
+		<property name="pitch">
+			<value>1.5</value>
+		</property>
+	</object>
+	<object class="LowpassEffect" id="{149daf23-0e5f-46f7-96f4-eac5be541d2b}">
+		<property name="cutoff">
+			<value>12500</value>
+		</property>
+	</object>
+	<object class="SpatialiserEffect" id="{f1d66ae4-0cce-43e9-b868-49de2b17097d}">
+		<property name="maximumDistance">
+			<value>50</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{ee3cd9c8-6338-45e5-a510-2e1a8f8a984f}" />
 </objects>
