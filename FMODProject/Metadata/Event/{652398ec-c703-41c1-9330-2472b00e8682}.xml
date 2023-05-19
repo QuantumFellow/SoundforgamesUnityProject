@@ -41,6 +41,7 @@ Triggered: When the Goldworm surfaces</value>
 			<destination>{bd962134-4e14-49d1-bf1a-a9bd76d77608}</destination>
 			<destination>{26c4a530-f12e-4fb0-ac49-ee32b8bf3828}</destination>
 			<destination>{38a9a65b-83e3-475c-b4d6-de8d36e751ba}</destination>
+			<destination>{1af64749-71b0-464d-9de5-3cab5b5431f5}</destination>
 		</relationship>
 		<relationship name="returnTracks">
 			<destination>{237b0f4e-ae0e-4df9-8ac6-792745b214ab}</destination>
@@ -143,6 +144,11 @@ Triggered: When the Goldworm surfaces</value>
 			<destination>{2f3ccae3-b891-46e3-ad6b-ae8d52e93d91}</destination>
 		</relationship>
 	</object>
+	<object class="GroupTrack" id="{1af64749-71b0-464d-9de5-3cab5b5431f5}">
+		<relationship name="mixerGroup">
+			<destination>{cd401032-89c9-4270-8fc4-7f829226a80c}</destination>
+		</relationship>
+	</object>
 	<object class="ReturnTrack" id="{237b0f4e-ae0e-4df9-8ac6-792745b214ab}">
 		<relationship name="mixerReturn">
 			<destination>{0f5bc551-e061-44ff-994d-ced54a39b6d6}</destination>
@@ -215,6 +221,9 @@ Triggered: When the Goldworm surfaces</value>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{117a30d2-ac76-4cd7-8253-ebbd5b207515}">
+		<property name="start">
+			<value>0.050000000000000003</value>
+		</property>
 		<property name="length">
 			<value>1.6000000000000001</value>
 		</property>
@@ -339,6 +348,9 @@ Triggered: When the Goldworm surfaces</value>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{2eada522-3df4-4ac3-bea0-8c13651c5864}">
+		<property name="length">
+			<value>1.0800000000000001</value>
+		</property>
 		<relationship name="fadeInCurve">
 			<destination>{ee77d079-a2d2-40f5-b850-6e4e3e5aaf09}</destination>
 		</relationship>
@@ -350,6 +362,9 @@ Triggered: When the Goldworm surfaces</value>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{2f3ccae3-b891-46e3-ad6b-ae8d52e93d91}">
+		<property name="color">
+			<value>Blue Light 1</value>
+		</property>
 		<property name="volume">
 			<value>-31</value>
 		</property>
@@ -361,6 +376,23 @@ Triggered: When the Goldworm surfaces</value>
 		</relationship>
 		<relationship name="panner">
 			<destination>{685ba9e6-59e8-4fa6-a41f-594eb2fc1c27}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{94f61dd9-1a65-4f1f-836d-ff2f4d957d65}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{cd401032-89c9-4270-8fc4-7f829226a80c}">
+		<property name="color">
+			<value>Yellow</value>
+		</property>
+		<property name="name">
+			<value>Impact</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{958c7db7-b951-4a99-a009-3c543bfdb278}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{3b6aa618-5958-4fca-8ea1-4c698f776ed0}</destination>
 		</relationship>
 		<relationship name="output">
 			<destination>{94f61dd9-1a65-4f1f-836d-ff2f4d957d65}</destination>
@@ -505,6 +537,12 @@ Triggered: When the Goldworm surfaces</value>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{685ba9e6-59e8-4fa6-a41f-594eb2fc1c27}" />
+	<object class="MixerBusEffectChain" id="{958c7db7-b951-4a99-a009-3c543bfdb278}">
+		<relationship name="effects">
+			<destination>{790fa4d0-4df3-4071-9bbc-652af7e77cdb}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{3b6aa618-5958-4fca-8ea1-4c698f776ed0}" />
 	<object class="MixerBusEffectChain" id="{d551ad91-38b2-4149-8df9-2f693803884a}">
 		<relationship name="effects">
 			<destination>{9677cd75-eae8-412b-a67e-553f491475d5}</destination>
@@ -521,7 +559,11 @@ Triggered: When the Goldworm surfaces</value>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{6d48232f-12c6-44eb-9d5d-10e73dcf0718}" />
-	<object class="SFXReverbEffect" id="{c24d7c62-3957-45e2-8b3c-7f72941e3a70}" />
+	<object class="SFXReverbEffect" id="{c24d7c62-3957-45e2-8b3c-7f72941e3a70}">
+		<property name="decayTime">
+			<value>500</value>
+		</property>
+	</object>
 	<object class="SpatialiserEffect" id="{7993007a-564b-40db-8873-6e6cb1608b24}">
 		<property name="minimumDistance">
 			<value>0</value>
@@ -539,7 +581,7 @@ Triggered: When the Goldworm surfaces</value>
 			<value>1</value>
 		</property>
 		<property name="curveShape">
-			<value>0.25471893</value>
+			<value>0.290677458</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{cd6845c7-fc77-48ed-aa19-7656a9421c05}">
@@ -564,18 +606,18 @@ Triggered: When the Goldworm surfaces</value>
 	<object class="MixerBusFader" id="{299dd983-d258-418f-94f4-9fe97eefc43f}" />
 	<object class="AutomationPoint" id="{cf89d89d-310c-4ee3-94b4-78f408a28ba7}">
 		<property name="position">
-			<value>0.90020408163265331</value>
+			<value>0.95020408163265335</value>
 		</property>
 		<property name="value">
 			<value>1</value>
 		</property>
 		<property name="curveShape">
-			<value>0.25471893</value>
+			<value>0.156165197</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{9e07edb5-bcbd-4eea-8b07-fde5eb2a0e93}">
 		<property name="position">
-			<value>1.6000000000000001</value>
+			<value>1.6500000000000001</value>
 		</property>
 		<property name="value">
 			<value>0</value>
@@ -661,7 +703,7 @@ Triggered: When the Goldworm surfaces</value>
 	</object>
 	<object class="AutomationPoint" id="{5173ab99-8e62-4285-819b-4e049336526c}">
 		<property name="position">
-			<value>0.80000000000000004</value>
+			<value>0.88000000000000012</value>
 		</property>
 		<property name="value">
 			<value>1</value>
@@ -672,13 +714,14 @@ Triggered: When the Goldworm surfaces</value>
 	</object>
 	<object class="AutomationPoint" id="{d5de7a5c-1764-419b-83d8-e251a678d004}">
 		<property name="position">
-			<value>1</value>
+			<value>1.0800000000000001</value>
 		</property>
 		<property name="value">
 			<value>0</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{95acd3ab-5632-42b9-8e5f-57d05f311b63}" />
+	<object class="MixerBusFader" id="{790fa4d0-4df3-4071-9bbc-652af7e77cdb}" />
 	<object class="MultibandEqEffect" id="{9677cd75-eae8-412b-a67e-553f491475d5}">
 		<property name="filterTypeB">
 			<value>7</value>
@@ -721,6 +764,9 @@ Triggered: When the Goldworm surfaces</value>
 		<property name="overlap">
 			<value>2.60000014</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{5f262cba-1d98-469c-b63d-33c9d6f2ce1b}</destination>
+		</relationship>
 	</object>
 	<object class="TremoloEffect" id="{eb4a4adc-5051-40d0-9412-525e7617aaac}">
 		<property name="frequency">
@@ -728,4 +774,12 @@ Triggered: When the Goldworm surfaces</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{4b552023-849b-4af5-bcc5-fad82e248022}" />
+	<object class="RandomizerModulator" id="{5f262cba-1d98-469c-b63d-33c9d6f2ce1b}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>21.5</value>
+		</property>
+	</object>
 </objects>

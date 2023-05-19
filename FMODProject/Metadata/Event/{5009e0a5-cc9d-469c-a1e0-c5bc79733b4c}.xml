@@ -147,6 +147,7 @@ Triggered: if the ants velocity exceeds 2 (if the player runs into them etc).</v
 	</object>
 	<object class="MixerBusEffectChain" id="{634a4dec-64a1-462b-bbc2-1d5f04a94752}">
 		<relationship name="effects">
+			<destination>{764f18bc-7d86-45ee-80d6-697cd9c78056}</destination>
 			<destination>{65d96ddf-b1d7-4248-b4ea-e371bb6d8570}</destination>
 			<destination>{79e0ee26-000b-42db-9069-05e04f814abf}</destination>
 		</relationship>
@@ -232,6 +233,11 @@ Triggered: if the ants velocity exceeds 2 (if the player runs into them etc).</v
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{1765fab4-04f3-441e-aef3-bceb7ec3c219}" />
+	<object class="SFXReverbEffect" id="{764f18bc-7d86-45ee-80d6-697cd9c78056}">
+		<property name="decayTime">
+			<value>170</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{65d96ddf-b1d7-4248-b4ea-e371bb6d8570}" />
 	<object class="SpatialiserEffect" id="{79e0ee26-000b-42db-9069-05e04f814abf}">
 		<property name="minimumDistance">

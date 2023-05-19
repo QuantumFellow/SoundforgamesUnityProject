@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{83e4465a-255a-4ad7-a51a-f910e36fbfe9}">
 		<property name="assetPath">
-			<value>Enemy/chitter.wav</value>
+			<value>Enemy/roar/chitter.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{cc8e9d4e-1630-4238-8c5f-f4f7370bc63a}">
 		<property name="assetPath">
-			<value>Ants/antchirp 10.wav</value>
+			<value>Ants/chirp/antchirp 10.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>96</value>
