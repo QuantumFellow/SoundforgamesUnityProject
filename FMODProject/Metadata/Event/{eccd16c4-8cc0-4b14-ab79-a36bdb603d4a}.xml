@@ -12,7 +12,7 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 			<value>Player Geiger Counter</value>
 		</property>
 		<property name="outputFormat">
-			<value>5</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{33020bd4-6815-4ed7-b787-bc0035017be4}</destination>
@@ -34,6 +34,7 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{0f196c46-8773-445c-a48a-a5dfb7674877}</destination>
+			<destination>{ae76e526-8e7e-4807-a31a-a5de2b2178f5}</destination>
 		</relationship>
 		<relationship name="timeline">
 			<destination>{1248500c-f116-47e8-822c-c825e83f7420}</destination>
@@ -51,6 +52,9 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{67af5ea1-c29a-4ef1-b4e1-73ca80f38724}">
+		<relationship name="automationTracks">
+			<destination>{c1abcfc3-da58-4dcf-b32f-082eb573fdb7}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{92e278d1-8fd6-4984-b73d-035c3cce9687}</destination>
 		</relationship>
@@ -87,7 +91,25 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 			<destination>{ed292531-d457-4399-b5cd-b2d327282deb}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{1248500c-f116-47e8-822c-c825e83f7420}" />
+	<object class="GroupTrack" id="{ae76e526-8e7e-4807-a31a-a5de2b2178f5}">
+		<relationship name="automationTracks">
+			<destination>{aaf9d5d5-062b-4833-ba9e-70d4c6c80c63}</destination>
+		</relationship>
+		<relationship name="modules">
+			<destination>{f41b4110-daf7-42b1-bb56-3185af088055}</destination>
+		</relationship>
+		<relationship name="mixerGroup">
+			<destination>{194ac228-cf69-4edd-a984-0b620c4baacb}</destination>
+		</relationship>
+	</object>
+	<object class="Timeline" id="{1248500c-f116-47e8-822c-c825e83f7420}">
+		<relationship name="modules">
+			<destination>{f41b4110-daf7-42b1-bb56-3185af088055}</destination>
+		</relationship>
+		<relationship name="markers">
+			<destination>{bb5b063d-1572-4b98-9e84-4d6eb87a7d43}</destination>
+		</relationship>
+	</object>
 	<object class="ParameterProxy" id="{46beb7a6-7b71-4c27-aa4e-38c61d986146}">
 		<relationship name="modules">
 			<destination>{29290c20-34ce-4beb-bcc0-f36835c02f8f}</destination>
@@ -111,6 +133,11 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 		</relationship>
 		<relationship name="mixer">
 			<destination>{5d8cc1a3-c18e-4821-ba32-3ea91d247501}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationTrack" id="{c1abcfc3-da58-4dcf-b32f-082eb573fdb7}">
+		<relationship name="automator">
+			<destination>{151db8dc-0b0d-467e-93ff-a65906845e5a}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{e04fdb0d-afdb-470d-be5a-e3146063b29a}">
@@ -167,6 +194,56 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 			<destination>{92e278d1-8fd6-4984-b73d-035c3cce9687}</destination>
 		</relationship>
 	</object>
+	<object class="AutomationTrack" id="{aaf9d5d5-062b-4833-ba9e-70d4c6c80c63}">
+		<relationship name="automator">
+			<destination>{0d2ccd49-ee07-4658-bcd4-897dd3ff119d}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{f41b4110-daf7-42b1-bb56-3185af088055}">
+		<property name="length">
+			<value>10.191000000000001</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{46614c23-50c6-4047-8beb-6fa6e7c37a07}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{194ac228-cf69-4edd-a984-0b620c4baacb}">
+		<property name="volume">
+			<value>-43</value>
+		</property>
+		<property name="name">
+			<value>Audio 2</value>
+		</property>
+		<relationship name="automators">
+			<destination>{0d2ccd49-ee07-4658-bcd4-897dd3ff119d}</destination>
+		</relationship>
+		<relationship name="effectChain">
+			<destination>{1afe6134-740e-4a1b-8180-f4d4231913c7}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{91e15a04-8d01-4765-8f42-6261d3c0b643}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{92e278d1-8fd6-4984-b73d-035c3cce9687}</destination>
+		</relationship>
+	</object>
+	<object class="LoopRegion" id="{bb5b063d-1572-4b98-9e84-4d6eb87a7d43}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>10.191000000000001</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{1248500c-f116-47e8-822c-c825e83f7420}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{ebd8b391-2de3-4814-a3e6-a5fff76620a5}</destination>
+		</relationship>
+	</object>
 	<object class="RandomizerModulator" id="{05815ff2-2124-4316-9c97-82b7728f1454}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
@@ -179,6 +256,7 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 		<relationship name="effects">
 			<destination>{efd1bb0e-0701-4044-b4e2-80a3eec9362b}</destination>
 			<destination>{89673e89-7f8f-4bc7-9c6e-017e70d9fdc5}</destination>
+			<destination>{e897874d-c09d-4c62-9e31-85c3b0691595}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{218db962-673e-4e18-9f25-26f1c4bbdf4f}">
@@ -231,6 +309,7 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 	</object>
 	<object class="MixerBusEffectChain" id="{ecc3903d-0e8e-4c51-bf2e-59fdb81ec13e}">
 		<relationship name="effects">
+			<destination>{38eba3a1-800c-443b-8e2b-3db3d7892e7f}</destination>
 			<destination>{66422378-d609-4ff2-a39d-ed8016a0ccd9}</destination>
 		</relationship>
 	</object>
@@ -239,12 +318,30 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 			<destination>{efe9d430-2166-4506-bca3-c1cada7cdd00}</destination>
 		</relationship>
 	</object>
+	<object class="Automator" id="{0d2ccd49-ee07-4658-bcd4-897dd3ff119d}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{12e27a2a-656c-4825-951c-817c199ca5ad}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{1afe6134-740e-4a1b-8180-f4d4231913c7}">
+		<relationship name="effects">
+			<destination>{5cfb89de-28b3-46a3-8d3a-32d286da1124}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{91e15a04-8d01-4765-8f42-6261d3c0b643}" />
 	<object class="MixerBusFader" id="{efd1bb0e-0701-4044-b4e2-80a3eec9362b}" />
 	<object class="DistortionEffect" id="{89673e89-7f8f-4bc7-9c6e-017e70d9fdc5}">
 		<property name="level">
 			<value>0.805000007</value>
 		</property>
+		<relationship name="automators">
+			<destination>{151db8dc-0b0d-467e-93ff-a65906845e5a}</destination>
+		</relationship>
 	</object>
+	<object class="SpatialiserEffect" id="{e897874d-c09d-4c62-9e31-85c3b0691595}" />
 	<object class="RandomizerModulator" id="{a08e90d7-3aef-4d44-837a-f14d43fc6a17}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>stereoPan</value>
@@ -341,6 +438,11 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 			<destination>{0174d46c-0989-455d-8c2e-a9ae88180991}</destination>
 		</relationship>
 	</object>
+	<object class="DistortionEffect" id="{38eba3a1-800c-443b-8e2b-3db3d7892e7f}">
+		<property name="level">
+			<value>0.729999959</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{66422378-d609-4ff2-a39d-ed8016a0ccd9}" />
 	<object class="LFOModulator" id="{efe9d430-2166-4506-bca3-c1cada7cdd00}">
 		<property name="nameOfPropertyBeingModulated">
@@ -361,6 +463,23 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 		<property name="depth">
 			<value>100</value>
 		</property>
+	</object>
+	<object class="AutomationCurve" id="{12e27a2a-656c-4825-951c-817c199ca5ad}">
+		<relationship name="parameter">
+			<destination>{95b9b67d-4a1e-45ab-806f-e46ce640bf5a}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{16860f65-8ab3-47aa-bfd7-fad6ddfc1cda}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusFader" id="{5cfb89de-28b3-46a3-8d3a-32d286da1124}" />
+	<object class="Automator" id="{151db8dc-0b0d-467e-93ff-a65906845e5a}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>level</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{aa86592a-e128-443c-aba7-40599caed31b}</destination>
+		</relationship>
 	</object>
 	<object class="AutomationPoint" id="{1bbde70e-1cda-4c03-9341-9676b1ff490d}">
 		<property name="position">
@@ -398,6 +517,42 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 		</property>
 		<property name="value">
 			<value>1</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{16860f65-8ab3-47aa-bfd7-fad6ddfc1cda}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>-38</value>
+		</property>
+	</object>
+	<object class="AutomationCurve" id="{aa86592a-e128-443c-aba7-40599caed31b}">
+		<relationship name="parameter">
+			<destination>{95b9b67d-4a1e-45ab-806f-e46ce640bf5a}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{be7626d8-6667-45ec-8a01-a135db24b2d7}</destination>
+			<destination>{9675adca-95cc-44a1-a29a-6a0e46e9f429}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{be7626d8-6667-45ec-8a01-a135db24b2d7}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>0.219999999</value>
+		</property>
+		<property name="curveShape">
+			<value>0.29538843</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{9675adca-95cc-44a1-a29a-6a0e46e9f429}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>0.680000007</value>
 		</property>
 	</object>
 </objects>

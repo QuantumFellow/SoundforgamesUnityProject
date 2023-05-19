@@ -116,6 +116,9 @@ Triggered: When the Goldworm takes a certain number of laser hits</value>
 	</object>
 	<object class="MixerBusPanner" id="{6942d935-da3e-4025-8ae9-36623406b893}" />
 	<object class="EventMixerGroup" id="{4bd2fc3f-e7ff-4260-afce-064cf6bbc90d}">
+		<property name="volume">
+			<value>-5.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -132,6 +135,7 @@ Triggered: When the Goldworm takes a certain number of laser hits</value>
 	<object class="MixerBusEffectChain" id="{23c9a34f-9e4d-4f80-8756-342af7b90d95}">
 		<relationship name="effects">
 			<destination>{f1f3e373-a848-4186-8634-f1a0d8c7f6d8}</destination>
+			<destination>{2ed9a2b3-2a22-40d2-95c2-29dc0fd4f39e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{6dfd0f87-ee89-433f-98ce-821db79b3993}">
@@ -142,10 +146,21 @@ Triggered: When the Goldworm takes a certain number of laser hits</value>
 	<object class="MixerBusFader" id="{81aad458-15df-4633-8eae-25ba429b76b3}" />
 	<object class="MixerBusEffectChain" id="{c0438177-7c4e-403a-bde8-9807194b5fd6}">
 		<relationship name="effects">
+			<destination>{f71c4a8d-6709-4705-bb07-0f290a31fa16}</destination>
 			<destination>{508696df-e022-4f90-9e84-e5411b0595d9}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4f7c9e5b-b25c-42c7-955f-2e1bffb5b77b}" />
 	<object class="MixerBusFader" id="{f1f3e373-a848-4186-8634-f1a0d8c7f6d8}" />
+	<object class="SpatialiserEffect" id="{2ed9a2b3-2a22-40d2-95c2-29dc0fd4f39e}">
+		<property name="maximumDistance">
+			<value>850</value>
+		</property>
+	</object>
+	<object class="LowpassEffect" id="{f71c4a8d-6709-4705-bb07-0f290a31fa16}">
+		<property name="cutoff">
+			<value>4200</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{508696df-e022-4f90-9e84-e5411b0595d9}" />
 </objects>

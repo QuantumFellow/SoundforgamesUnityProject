@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{9da4ff25-a3af-4732-8632-dbb852b86c29}">
 		<property name="assetPath">
-			<value>Ambience.wav</value>
+			<value>Misc./Ambience.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
@@ -14,7 +14,7 @@
 			<value>1</value>
 		</property>
 		<property name="length">
-			<value>1134.3804081632652</value>
+			<value>1002.7070068027211</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{4c43130b-9186-4fb6-9d65-a9acdac70927}</destination>

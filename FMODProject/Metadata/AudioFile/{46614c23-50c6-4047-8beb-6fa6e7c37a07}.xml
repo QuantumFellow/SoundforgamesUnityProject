@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{46614c23-50c6-4047-8beb-6fa6e7c37a07}">
 		<property name="assetPath">
-			<value>white noise.wav</value>
+			<value>Misc./white noise.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

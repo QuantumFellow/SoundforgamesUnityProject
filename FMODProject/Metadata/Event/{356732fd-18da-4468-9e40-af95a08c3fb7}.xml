@@ -145,6 +145,9 @@ Triggered: When the droid fires a seed</value>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{889ecc98-ddec-46a4-b660-4977223949ed}">
+		<property name="volume">
+			<value>1.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -168,7 +171,7 @@ Triggered: When the droid fires a seed</value>
 	</object>
 	<object class="EventMixerGroup" id="{e837474e-30c0-4b75-b2a1-52d92bfe1e51}">
 		<property name="volume">
-			<value>-13.5</value>
+			<value>-6.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>

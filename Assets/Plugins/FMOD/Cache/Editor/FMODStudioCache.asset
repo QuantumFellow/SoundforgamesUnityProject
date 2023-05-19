@@ -51,35 +51,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 80
   Length: 265
---- !u!114 &-8740097282477407104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Enemy/GoldWormTunneling
-  m_EditorClassIdentifier: 
-  Path: event:/Enemy/GoldWormTunneling
-  Guid:
-    Data1: -356906517
-    Data2: 1321253787
-    Data3: 2114148776
-    Data4: -996684883
-  Banks:
-  - {fileID: -7470815133711611052}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 5034584318818473358}
-  - {fileID: 909704510806131388}
-  MinDistance: 0
-  MaxDistance: 50
-  Length: 0
 --- !u!114 &-8564907554555049243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,6 +73,54 @@ MonoBehaviour:
     data2: 872337691
   Type: 0
   IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-8481986828076855603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GoldWormTunneling/MoleMovement
+  m_EditorClassIdentifier: 
+  Name: MoleMovement
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3186746140
+    data2: 540323285
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-8338060508310491134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GoldWormTunneling/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 4130366537
+    data2: 2699559447
+  Type: 1
+  IsGlobal: 0
   Labels: []
   Exists: 1
 --- !u!114 &-8237689361282662180
@@ -128,6 +147,36 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-8012322054271138974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menu/UIMode
+  m_EditorClassIdentifier: 
+  Name: UIMode
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 3205696653
+    data2: 2130145745
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Pause
+  - Resume
+  - OpenMenu
+  - CloseMenu
+  - SeedPickUp
+  - CompendiumUpdated
+  Exists: 1
 --- !u!114 &-7975069425227881211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,6 +201,35 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-7913665975098168308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemy/GoldWormTunneling
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy/GoldWormTunneling
+  Guid:
+    Data1: -356906517
+    Data2: 1321253787
+    Data3: 2114148776
+    Data4: -996684883
+  Banks:
+  - {fileID: -7470815133711611052}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8481986828076855603}
+  - {fileID: -8338060508310491134}
+  MinDistance: 0
+  MaxDistance: 50
+  Length: 0
 --- !u!114 &-7470815133711611052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,10 +245,10 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638201129986569226
+  lastModified: 638201319531205482
   FileSizes:
   - Name: Desktop
-    Value: 2410976
+    Value: 2715072
   Exists: 1
 --- !u!114 &-7218288516651920230
 MonoBehaviour:
@@ -187,10 +265,37 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638201129985228300
+  lastModified: 638201319529511235
   FileSizes:
   - Name: Desktop
     Value: 4238
+  Exists: 1
+--- !u!114 &-6678008936327776919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player Footsteps/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2238430967
+    data2: 1277230935
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Sand
+  - Rock
+  - Metal
   Exists: 1
 --- !u!114 &-6140372252881690269
 MonoBehaviour:
@@ -213,30 +318,6 @@ MonoBehaviour:
     data1: 4012486192
     data2: 266528631
   Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-6054826846919652937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  StudioPath: 
-  Min: 0
-  Max: 4
-  Default: 0
-  ID:
-    data1: 4130366537
-    data2: 2699559447
-  Type: 1
   IsGlobal: 0
   Labels: []
   Exists: 1
@@ -340,7 +421,7 @@ MonoBehaviour:
   - {fileID: -7470815133711611052}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: -6140372252881690269}
   MinDistance: 0
@@ -398,7 +479,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-4523914402964783071
+--- !u!114 &-4187803407614648070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -408,50 +489,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ant/Ant
+  m_Name: event:/Character/Player Footsteps
   m_EditorClassIdentifier: 
-  Path: event:/Ant/Ant
+  Path: event:/Character/Player Footsteps
   Guid:
-    Data1: 1342824613
-    Data2: 1184681117
-    Data3: -1127882591
-    Data4: 1278964601
+    Data1: -385494015
+    Data2: 1195472629
+    Data3: -2064153176
+    Data4: 1900422219
   Banks:
+  - {fileID: 4450031680838293598}
   - {fileID: -7470815133711611052}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 10
-  Length: 762
---- !u!114 &-4228794227554585268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ant/AntHive
-  m_EditorClassIdentifier: 
-  Path: event:/Ant/AntHive
-  Guid:
-    Data1: -426989203
-    Data2: 1165065671
-    Data3: -708693619
-    Data4: -1302483117
-  Banks:
-  - {fileID: -7470815133711611052}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 30
-  Length: 1000
+  Parameters:
+  - {fileID: -6678008936327776919}
+  MinDistance: 1
+  MaxDistance: 55
+  Length: 0
 --- !u!114 &-4139670148003439616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,34 +619,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 80
   Length: 0
---- !u!114 &-2313874157098313623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Music
-  Guid:
-    Data1: -2124805083
-    Data2: 1105971910
-    Data3: -116382282
-    Data4: 1983463576
-  Banks:
-  - {fileID: 2219128681694567007}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -6054826846919652937}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-2250725151075663136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,7 +643,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-972555592410718963
+--- !u!114 &-1539587533226955263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -624,24 +652,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Player Footsteps/Surface
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music
   m_EditorClassIdentifier: 
-  Name: Surface
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 2238430967
-    data2: 1277230935
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Sand
-  - Rock
-  - Metal
-  Exists: 1
+  Path: event:/Music/Music
+  Guid:
+    Data1: -2124805083
+    Data2: 1105971910
+    Data3: -116382282
+    Data4: 1983463576
+  Banks:
+  - {fileID: 2219128681694567007}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 661380106632170095}
+  - {fileID: 3208199552283079690}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1002707
 --- !u!114 &-899922191731042227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,6 +696,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-840674483525109063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ant/Ant
+  m_EditorClassIdentifier: 
+  Path: event:/Ant/Ant
+  Guid:
+    Data1: 1342824613
+    Data2: 1184681117
+    Data3: -1127882591
+    Data4: 1278964601
+  Banks:
+  - {fileID: -7470815133711611052}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 10
+  Length: 762
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,8 +741,6 @@ MonoBehaviour:
   - {fileID: 2219128681694567007}
   - {fileID: -7470815133711611052}
   EditorEvents:
-  - {fileID: 1832703123299865981}
-  - {fileID: -2313874157098313623}
   - {fileID: -5921883069463290245}
   - {fileID: 2861815292184536797}
   - {fileID: 8101030776298443919}
@@ -694,25 +749,27 @@ MonoBehaviour:
   - {fileID: 6071516150998558943}
   - {fileID: -3165496544174529612}
   - {fileID: -3210859827140901555}
-  - {fileID: -4228794227554585268}
   - {fileID: -4139670148003439616}
   - {fileID: 5098006881648537249}
   - {fileID: 4490606575963264758}
   - {fileID: -4538137846663639155}
-  - {fileID: 1136982759085961798}
   - {fileID: -5933129911399911028}
-  - {fileID: 3194566341431265890}
   - {fileID: 6275514850837729282}
   - {fileID: 525602267344705921}
   - {fileID: 2129881271948467554}
   - {fileID: 1408585609924078354}
-  - {fileID: -8740097282477407104}
   - {fileID: 8691397476408717107}
   - {fileID: -5643733335956941060}
   - {fileID: -3288028087839913496}
   - {fileID: 4370662443414175931}
-  - {fileID: -4523914402964783071}
   - {fileID: 1923584641295570636}
+  - {fileID: -4187803407614648070}
+  - {fileID: -1539587533226955263}
+  - {fileID: 5804387729866564126}
+  - {fileID: 6799541795155648732}
+  - {fileID: -840674483525109063}
+  - {fileID: 8348200248181612421}
+  - {fileID: -7913665975098168308}
   EditorParameters:
   - {fileID: 5600838282721800705}
   - {fileID: -899922191731042227}
@@ -726,7 +783,7 @@ MonoBehaviour:
   - {fileID: 4450031680838293598}
   StringsBanks:
   - {fileID: -7218288516651920230}
-  cacheTime: 638201129986569226
+  cacheTime: 638201319531205482
   cacheVersion: 10
 --- !u!114 &525602267344705921
 MonoBehaviour:
@@ -756,7 +813,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 90
   Length: 0
---- !u!114 &909704510806131388
+--- !u!114 &661380106632170095
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -766,7 +823,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/GoldWormTunneling/Intensity
+  m_Name: parameter:/Music/Intensity
   m_EditorClassIdentifier: 
   Name: Intensity
   StudioPath: 
@@ -780,34 +837,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &1136982759085961798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Menu
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Menu
-  Guid:
-    Data1: -1840800105
-    Data2: 1164219590
-    Data3: -1091619938
-    Data4: 1253267948
-  Banks:
-  - {fileID: -7470815133711611052}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 8909436881264878719}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &1408585609924078354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -833,35 +862,6 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
-  MaxDistance: 55
-  Length: 0
---- !u!114 &1832703123299865981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Character/Player Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Character/Player Footsteps
-  Guid:
-    Data1: -385494015
-    Data2: 1195472629
-    Data3: -2064153176
-    Data4: 1900422219
-  Banks:
-  - {fileID: 4450031680838293598}
-  - {fileID: -7470815133711611052}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -972555592410718963}
-  MinDistance: 1
   MaxDistance: 55
   Length: 0
 --- !u!114 &1923584641295570636
@@ -936,10 +936,10 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638201129985238312
+  lastModified: 638201319529707859
   FileSizes:
   - Name: Desktop
-    Value: 1416
+    Value: 5912384
   Exists: 1
 --- !u!114 &2861815292184536797
 MonoBehaviour:
@@ -968,7 +968,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &3194566341431265890
+--- !u!114 &3208199552283079690
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -977,25 +977,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Character/Player Geiger Counter
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/TimeOfDay
   m_EditorClassIdentifier: 
-  Path: event:/Character/Player Geiger Counter
-  Guid:
-    Data1: -322103612
-    Data2: 1259637952
-    Data3: 1805875627
-    Data4: 1245536475
-  Banks:
-  - {fileID: -7470815133711611052}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 5560999230158086435}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
+  Name: TimeOfDay
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 383380800
+    data2: 3819101840
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Night
+  - Morning
+  - Afternoon
+  - Evening
+  Exists: 1
 --- !u!114 &4011905180810370052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1090,10 +1090,10 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638201129985208230
+  lastModified: 638201319529486087
   FileSizes:
   - Name: Desktop
-    Value: 145760
+    Value: 265184
   Exists: 1
 --- !u!114 &4490606575963264758
 MonoBehaviour:
@@ -1116,7 +1116,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -7470815133711611052}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1142,30 +1142,6 @@ MonoBehaviour:
   ID:
     data1: 2101916335
     data2: 1968733156
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &5034584318818473358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/GoldWormTunneling/MoleMovement
-  m_EditorClassIdentifier: 
-  Name: MoleMovement
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3186746140
-    data2: 540323285
   Type: 0
   IsGlobal: 0
   Labels: []
@@ -1198,30 +1174,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 50
   Length: 0
---- !u!114 &5560999230158086435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Player Geiger Counter/Contamination
-  m_EditorClassIdentifier: 
-  Name: Contamination
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 4190133500
-    data2: 3121572818
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &5600838282721800705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1246,6 +1198,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &5804387729866564126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ant/AntHive
+  m_EditorClassIdentifier: 
+  Path: event:/Ant/AntHive
+  Guid:
+    Data1: -426989203
+    Data2: 1165065671
+    Data3: -708693619
+    Data4: -1302483117
+  Banks:
+  - {fileID: -7470815133711611052}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 30
+  Length: 1000
 --- !u!114 &6066176841080736484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1402,6 +1381,58 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &6799541795155648732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Menu
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Menu
+  Guid:
+    Data1: -1840800105
+    Data2: 1164219590
+    Data3: -1091619938
+    Data4: 1253267948
+  Banks:
+  - {fileID: -7470815133711611052}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8012322054271138974}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7080756460542731162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player Geiger Counter/Contamination
+  m_EditorClassIdentifier: 
+  Name: Contamination
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4190133500
+    data2: 3121572818
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &7127556134174266239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1477,6 +1508,34 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 50
   Length: 0
+--- !u!114 &8348200248181612421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Player Geiger Counter
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Player Geiger Counter
+  Guid:
+    Data1: -322103612
+    Data2: 1259637952
+    Data3: 1805875627
+    Data4: 1245536475
+  Banks:
+  - {fileID: -7470815133711611052}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 7080756460542731162}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10191
 --- !u!114 &8691397476408717107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1504,36 +1563,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 30
   Length: 1200
---- !u!114 &8909436881264878719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Menu/UIMode
-  m_EditorClassIdentifier: 
-  Name: UIMode
-  StudioPath: 
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 3205696653
-    data2: 2130145745
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Pause
-  - Resume
-  - OpenMenu
-  - CloseMenu
-  - SeedPickUp
-  - CompendiumUpdated
-  Exists: 1
 --- !u!114 &8960757795526132968
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{78ef9cfe-a71f-4bfe-bdf1-8032bcd0711a}">
 		<property name="assetPath">
-			<value>brown.wav</value>
+			<value>Ambience/Weather/Wind/brown.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
