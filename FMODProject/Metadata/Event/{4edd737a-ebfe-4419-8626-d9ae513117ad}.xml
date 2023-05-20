@@ -89,12 +89,22 @@ Triggered: When switching tool</value>
 	</object>
 	<object class="MarkerTrack" id="{874fdb61-c583-4786-9daa-4708707aca89}" />
 	<object class="GroupTrack" id="{3825aff5-a423-467b-a95c-6099e1ad8504}">
+		<relationship name="modules">
+			<destination>{34ff1643-c3af-4a97-9e4c-83e412dd7a65}</destination>
+			<destination>{2a8646e5-0c0f-40bf-b87c-54e0aeb530d0}</destination>
+			<destination>{01d16c8e-17ef-4187-8a57-bf7b7c989d20}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{e1ec628b-5854-4734-a9c8-cafced72b5e6}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{022d1b40-f18b-4d17-be8c-5ddb8f7d4451}" />
 	<object class="ParameterProxy" id="{7b03bc9c-000f-42e9-a5ee-3dda16145ab7}">
+		<relationship name="modules">
+			<destination>{34ff1643-c3af-4a97-9e4c-83e412dd7a65}</destination>
+			<destination>{2a8646e5-0c0f-40bf-b87c-54e0aeb530d0}</destination>
+			<destination>{01d16c8e-17ef-4187-8a57-bf7b7c989d20}</destination>
+		</relationship>
 		<relationship name="preset">
 			<destination>{84baf3e8-4b51-426f-b92e-31587f857f63}</destination>
 		</relationship>
@@ -122,6 +132,36 @@ Triggered: When switching tool</value>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{39321674-55fb-4758-8e66-bc869caf3583}" />
+	<object class="SingleSound" id="{34ff1643-c3af-4a97-9e4c-83e412dd7a65}">
+		<property name="pitch">
+			<value>4</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{6f2ab6fc-2941-4485-bda9-2ae45d5aa834}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{2a8646e5-0c0f-40bf-b87c-54e0aeb530d0}">
+		<property name="start">
+			<value>1</value>
+		</property>
+		<property name="pitch">
+			<value>4</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{6f2ab6fc-2941-4485-bda9-2ae45d5aa834}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{01d16c8e-17ef-4187-8a57-bf7b7c989d20}">
+		<property name="start">
+			<value>2</value>
+		</property>
+		<property name="pitch">
+			<value>4</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{6f2ab6fc-2941-4485-bda9-2ae45d5aa834}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{e1ec628b-5854-4734-a9c8-cafced72b5e6}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -149,10 +189,16 @@ Triggered: When switching tool</value>
 	<object class="MixerBusFader" id="{38d30a65-c1b6-44f2-b4b3-c938d095e6a0}" />
 	<object class="MixerBusEffectChain" id="{fe02e9b2-caa2-442f-976b-4882ad46695b}">
 		<relationship name="effects">
+			<destination>{5bddf1bf-f7b1-46f7-bc19-1518249273c8}</destination>
 			<destination>{c16ace09-acfa-4081-a5f9-3fc3b9d57d7b}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a2a28c6a-fc89-4589-b366-ece6b9464744}" />
 	<object class="MixerBusFader" id="{78891e0e-3e9e-45b7-94b8-73a2baedf184}" />
+	<object class="HighpassEffect" id="{5bddf1bf-f7b1-46f7-bc19-1518249273c8}">
+		<property name="cutoff">
+			<value>2500</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{c16ace09-acfa-4081-a5f9-3fc3b9d57d7b}" />
 </objects>

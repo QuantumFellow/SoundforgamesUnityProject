@@ -245,10 +245,10 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638201319531205482
+  lastModified: 638202040061350021
   FileSizes:
   - Name: Desktop
-    Value: 2715072
+    Value: 3364992
   Exists: 1
 --- !u!114 &-7218288516651920230
 MonoBehaviour:
@@ -265,7 +265,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638201319529511235
+  lastModified: 638202040059326420
   FileSizes:
   - Name: Desktop
     Value: 4238
@@ -365,13 +365,13 @@ MonoBehaviour:
     Data4: 828295654
   Banks:
   - {fileID: -7470815133711611052}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 16788
 --- !u!114 &-5921883069463290245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,7 +420,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -7470815133711611052}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters:
   - {fileID: -6140372252881690269}
@@ -471,14 +471,14 @@ MonoBehaviour:
     Data4: -772163049
   Banks:
   - {fileID: -7470815133711611052}
-  IsStream: 0
-  Is3D: 0
+  IsStream: 1
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: -4829439159113983901}
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1600
 --- !u!114 &-4187803407614648070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,12 +529,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -7470815133711611052}
   IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
+  Is3D: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 30
-  Length: 0
+  Length: 1000
 --- !u!114 &-3288028087839913496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -610,8 +610,8 @@ MonoBehaviour:
     Data4: -151567472
   Banks:
   - {fileID: -7470815133711611052}
-  IsStream: 0
-  Is3D: 0
+  IsStream: 1
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: 4853808550856239070}
@@ -783,7 +783,7 @@ MonoBehaviour:
   - {fileID: 4450031680838293598}
   StringsBanks:
   - {fileID: -7218288516651920230}
-  cacheTime: 638201319531205482
+  cacheTime: 638202040061350021
   cacheVersion: 10
 --- !u!114 &525602267344705921
 MonoBehaviour:
@@ -857,13 +857,13 @@ MonoBehaviour:
     Data4: 629992415
   Banks:
   - {fileID: -7470815133711611052}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 55
-  Length: 0
+  Length: 1030
 --- !u!114 &1923584641295570636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -936,7 +936,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638201319529707859
+  lastModified: 638202040059548760
   FileSizes:
   - Name: Desktop
     Value: 5912384
@@ -1068,7 +1068,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -7470815133711611052}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters:
   - {fileID: 7127556134174266239}
@@ -1090,7 +1090,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638201319529486087
+  lastModified: 638202040059305850
   FileSizes:
   - Name: Desktop
     Value: 265184
@@ -1115,13 +1115,13 @@ MonoBehaviour:
     Data4: -1655287100
   Banks:
   - {fileID: -7470815133711611052}
-  IsStream: 0
+  IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 850
-  Length: 0
+  Length: 540
 --- !u!114 &4853808550856239070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1308,7 +1308,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 50
-  Length: 0
+  Length: 2998
 --- !u!114 &6281653057008609878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1501,13 +1501,13 @@ MonoBehaviour:
     Data4: 799697196
   Banks:
   - {fileID: -7470815133711611052}
-  IsStream: 0
-  Is3D: 0
+  IsStream: 1
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 50
-  Length: 0
+  Length: 1570
 --- !u!114 &8348200248181612421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1562,7 +1562,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 30
-  Length: 1200
+  Length: 1199
 --- !u!114 &8960757795526132968
 MonoBehaviour:
   m_ObjectHideFlags: 0

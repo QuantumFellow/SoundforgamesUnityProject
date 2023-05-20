@@ -87,11 +87,21 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 	</object>
 	<object class="MarkerTrack" id="{d9077a0d-d7bf-49a3-87d7-68a2084afecf}" />
 	<object class="GroupTrack" id="{c9c3f15b-ba46-4ddc-a6f2-cf9ba493eaf9}">
+		<relationship name="modules">
+			<destination>{eb88f202-8f21-461f-a6ab-8001938c4b6d}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{d31cb94d-42c7-41ea-99e7-968e0b50272b}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{cdcdd685-2392-478b-a7c9-4126a73710d5}" />
+	<object class="Timeline" id="{cdcdd685-2392-478b-a7c9-4126a73710d5}">
+		<relationship name="modules">
+			<destination>{eb88f202-8f21-461f-a6ab-8001938c4b6d}</destination>
+		</relationship>
+		<relationship name="markers">
+			<destination>{146b44c5-3f9c-46f7-9a0e-af335e40eb38}</destination>
+		</relationship>
+	</object>
 	<object class="ActionSheet" id="{6f52dc9d-5e59-4f96-839e-8776c287bc39}">
 		<relationship name="modules">
 			<destination>{6ade9326-33b1-486e-8220-c460f3dc3fbf}</destination>
@@ -115,6 +125,14 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4803abf2-44ec-4f4f-a32c-6b9e00f9d96e}" />
+	<object class="SingleSound" id="{eb88f202-8f21-461f-a6ab-8001938c4b6d}">
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{0f84e8c9-2a03-4a34-8872-3abb7e7bc833}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{d31cb94d-42c7-41ea-99e7-968e0b50272b}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -129,9 +147,24 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 			<destination>{33318255-fc2b-4826-bf4c-176f0eef34b0}</destination>
 		</relationship>
 	</object>
+	<object class="LoopRegion" id="{146b44c5-3f9c-46f7-9a0e-af335e40eb38}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>1</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{cdcdd685-2392-478b-a7c9-4126a73710d5}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{d9077a0d-d7bf-49a3-87d7-68a2084afecf}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{15625ecb-8ca7-4fe5-9d51-379999665358}">
 		<relationship name="effects">
 			<destination>{22f9dbe2-1f12-4ee6-938e-e38d04228b2e}</destination>
+			<destination>{29db28df-2a0a-47d0-a268-0b0a3b2cc5cc}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8552f6e3-f8d0-4109-839f-0e3110d1d553}">
@@ -142,10 +175,57 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 	<object class="MixerBusFader" id="{e94fc261-0cd7-4423-af36-d21ef0903f44}" />
 	<object class="MixerBusEffectChain" id="{4e58694f-7796-43f2-9c9f-e35ceff69dc4}">
 		<relationship name="effects">
+			<destination>{9ea30386-bd2d-4cf1-b739-55ceb7829fd1}</destination>
+			<destination>{eb7e0e7b-8ac0-48e7-86c5-ef0216df8785}</destination>
+			<destination>{45cf7b2d-2b49-4c2f-94e1-4c6722eecd7f}</destination>
 			<destination>{8c7a48d4-d83a-4042-800e-ee027c847d10}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{19a8c941-f171-4590-8eb5-4129a8ccd851}" />
 	<object class="MixerBusFader" id="{22f9dbe2-1f12-4ee6-938e-e38d04228b2e}" />
+	<object class="SpatialiserEffect" id="{29db28df-2a0a-47d0-a268-0b0a3b2cc5cc}">
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>30</value>
+		</property>
+	</object>
+	<object class="DistortionEffect" id="{9ea30386-bd2d-4cf1-b739-55ceb7829fd1}">
+		<property name="level">
+			<value>0.424999982</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{eb7e0e7b-8ac0-48e7-86c5-ef0216df8785}">
+		<property name="filterTypeB">
+			<value>8</value>
+		</property>
+		<property name="filterTypeC">
+			<value>7</value>
+		</property>
+		<property name="frequencyA">
+			<value>7186.53516</value>
+		</property>
+		<property name="frequencyB">
+			<value>2550.40649</value>
+		</property>
+		<property name="frequencyC">
+			<value>506.698517</value>
+		</property>
+		<property name="qualityA">
+			<value>4.89655209</value>
+		</property>
+		<property name="gainB">
+			<value>15.5172405</value>
+		</property>
+		<property name="gainC">
+			<value>-30</value>
+		</property>
+	</object>
+	<object class="LowpassEffect" id="{45cf7b2d-2b49-4c2f-94e1-4c6722eecd7f}">
+		<property name="cutoff">
+			<value>2300</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{8c7a48d4-d83a-4042-800e-ee027c847d10}" />
 </objects>

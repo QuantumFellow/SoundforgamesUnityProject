@@ -43,7 +43,6 @@ Triggered: On Start
 			<destination>{636da1c0-2f1d-4286-8d4d-5ad3e778cdb8}</destination>
 			<destination>{bc1909a2-ebfd-487d-8ab1-47be4fb89dc6}</destination>
 			<destination>{92dcf713-7f0d-4b69-8e08-722d4f02c613}</destination>
-			<destination>{57e8440e-fea3-4869-bf7a-03d0fe7f0f86}</destination>
 		</relationship>
 		<relationship name="timeline">
 			<destination>{9a332574-959e-4cd8-af89-3795b0cee59e}</destination>
@@ -138,11 +137,6 @@ Triggered: On Start
 			<destination>{22535e6a-2ac1-4381-87f8-c4707b19fe39}</destination>
 		</relationship>
 	</object>
-	<object class="GroupTrack" id="{57e8440e-fea3-4869-bf7a-03d0fe7f0f86}">
-		<relationship name="mixerGroup">
-			<destination>{50c377b4-e690-476b-b3a8-5c67c80ef0d0}</destination>
-		</relationship>
-	</object>
 	<object class="Timeline" id="{9a332574-959e-4cd8-af89-3795b0cee59e}" />
 	<object class="ActionSheet" id="{21338f8e-c7ff-449d-8c65-4eba8ba4bf74}">
 		<relationship name="modules">
@@ -170,6 +164,9 @@ Triggered: On Start
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{eb63a6a2-2c99-4177-8085-b0c7c8df0e50}">
+		<property name="volume">
+			<value>2.5</value>
+		</property>
 		<property name="overridingInputFormat">
 			<value>1</value>
 		</property>
@@ -290,20 +287,6 @@ Triggered: On Start
 			<destination>{eb63a6a2-2c99-4177-8085-b0c7c8df0e50}</destination>
 		</relationship>
 	</object>
-	<object class="EventMixerGroup" id="{50c377b4-e690-476b-b3a8-5c67c80ef0d0}">
-		<property name="name">
-			<value>Audio 4</value>
-		</property>
-		<relationship name="effectChain">
-			<destination>{2e598ed5-de77-438c-9ba9-3020ee0c8263}</destination>
-		</relationship>
-		<relationship name="panner">
-			<destination>{0b8d6d6b-48d8-44d2-b5a8-3bea44b28e01}</destination>
-		</relationship>
-		<relationship name="output">
-			<destination>{eb63a6a2-2c99-4177-8085-b0c7c8df0e50}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusEffectChain" id="{9e7b2e90-5063-4d20-b31e-84150b3138ec}">
 		<relationship name="effects">
 			<destination>{53c9b076-55d7-457a-a67c-64e5cbed55d5}</destination>
@@ -363,12 +346,6 @@ Triggered: On Start
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{14c66b92-72af-4a8e-b189-aa864d9b9b4f}" />
-	<object class="MixerBusEffectChain" id="{2e598ed5-de77-438c-9ba9-3020ee0c8263}">
-		<relationship name="effects">
-			<destination>{458c37d3-b3dc-4623-aafd-9e37dd284637}</destination>
-		</relationship>
-	</object>
-	<object class="MixerBusPanner" id="{0b8d6d6b-48d8-44d2-b5a8-3bea44b28e01}" />
 	<object class="MultibandEqEffect" id="{53c9b076-55d7-457a-a67c-64e5cbed55d5}">
 		<property name="frequencyA">
 			<value>2770.78125</value>
@@ -447,7 +424,6 @@ Triggered: On Start
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{223b4314-46a8-4bfc-8c4d-bde1c5f300e0}" />
-	<object class="MixerBusFader" id="{458c37d3-b3dc-4623-aafd-9e37dd284637}" />
 	<object class="AutomationPoint" id="{06096e22-0d40-41c6-b6e9-09e026aa2b6f}">
 		<property name="position">
 			<value>0</value>

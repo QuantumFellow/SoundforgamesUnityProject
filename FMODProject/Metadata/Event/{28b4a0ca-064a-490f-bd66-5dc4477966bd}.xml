@@ -207,6 +207,9 @@ Triggered: Upon getting to within a certain distance of the radiation zone</valu
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{2d3f69c1-3bdd-4844-b943-86165cbcf11d}">
+		<property name="volume">
+			<value>-4</value>
+		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>

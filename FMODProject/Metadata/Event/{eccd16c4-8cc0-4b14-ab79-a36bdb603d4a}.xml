@@ -181,6 +181,9 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{ed292531-d457-4399-b5cd-b2d327282deb}">
+		<property name="volume">
+			<value>-24.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -357,6 +360,7 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 		<relationship name="automationPoints">
 			<destination>{1bbde70e-1cda-4c03-9341-9676b1ff490d}</destination>
 			<destination>{3662dbd9-9855-48da-b39b-4af800e3535d}</destination>
+			<destination>{7ff163cb-61ae-40d0-a43d-df055e8420ef}</destination>
 		</relationship>
 	</object>
 	<object class="AutomationCurve" id="{bdb54b12-334d-4b90-9a4c-4a020c306c71}">
@@ -470,6 +474,7 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 		</relationship>
 		<relationship name="automationPoints">
 			<destination>{16860f65-8ab3-47aa-bfd7-fad6ddfc1cda}</destination>
+			<destination>{6bbeff65-7e88-4e55-86b2-a994a442888f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{5cfb89de-28b3-46a3-8d3a-32d286da1124}" />
@@ -497,7 +502,15 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>500</value>
+			<value>390</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{7ff163cb-61ae-40d0-a43d-df055e8420ef}">
+		<property name="position">
+			<value>0.20000000000000001</value>
+		</property>
+		<property name="value">
+			<value>85</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{bffc7cc3-1824-436a-a758-3a7a77a1e93a}">
@@ -524,7 +537,15 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>-38</value>
+			<value>-80</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{6bbeff65-7e88-4e55-86b2-a994a442888f}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>-80</value>
 		</property>
 	</object>
 	<object class="AutomationCurve" id="{aa86592a-e128-443c-aba7-40599caed31b}">

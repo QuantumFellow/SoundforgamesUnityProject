@@ -205,6 +205,9 @@ Triggered: When the feet of the character animation touch the floor.
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{cab8585f-4802-40ae-b8c8-8f822593975f}">
+		<property name="volume">
+			<value>-5</value>
+		</property>
 		<property name="name">
 			<value>Sand</value>
 		</property>
@@ -248,6 +251,9 @@ Triggered: When the feet of the character animation touch the floor.
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{d8ca3b9d-fb95-47e7-bbc5-686d7757d54d}">
+		<property name="volume">
+			<value>-5</value>
+		</property>
 		<property name="name">
 			<value>Rock</value>
 		</property>
@@ -264,6 +270,9 @@ Triggered: When the feet of the character animation touch the floor.
 	<object class="MultiSound" id="{65f31dd3-d928-466e-854b-36dd65b51e51}">
 		<property name="start">
 			<value>2</value>
+		</property>
+		<property name="volume">
+			<value>-10.5</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{28ababaf-1bb7-4ac9-ab80-61d318f0f40b}</destination>
@@ -287,7 +296,7 @@ Triggered: When the feet of the character animation touch the floor.
 	</object>
 	<object class="EventMixerGroup" id="{4874135f-7643-413e-8549-1b83923a0732}">
 		<property name="volume">
-			<value>-11.5</value>
+			<value>-17</value>
 		</property>
 		<property name="name">
 			<value>Metal</value>
@@ -370,7 +379,7 @@ Triggered: When the feet of the character animation touch the floor.
 	</object>
 	<object class="EventMixerGroup" id="{d1a2e2aa-b04f-4018-8efb-642482d983ba}">
 		<property name="volume">
-			<value>-19.5</value>
+			<value>-24.5</value>
 		</property>
 		<property name="name">
 			<value>Clothing</value>
@@ -961,7 +970,7 @@ Triggered: When the feet of the character animation touch the floor.
 	</object>
 	<object class="LowpassEffect" id="{eedad49d-e8e9-47d8-b6e3-b10faa1c4504}">
 		<property name="cutoff">
-			<value>7000</value>
+			<value>320</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{010ca9ba-d0a4-4b5b-9e02-f9d6e3603f6f}" />

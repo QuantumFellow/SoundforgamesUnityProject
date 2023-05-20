@@ -43,11 +43,14 @@ Triggered: When the Goldworm surfaces</value>
 			<destination>{38a9a65b-83e3-475c-b4d6-de8d36e751ba}</destination>
 			<destination>{1af64749-71b0-464d-9de5-3cab5b5431f5}</destination>
 			<destination>{af8bffb3-bd8b-417b-a629-b1a173977989}</destination>
-			<destination>{fa4effb9-51a0-4f07-a166-3372ea3d74b8}</destination>
+			<destination>{a91c5a81-a6c9-4d98-a0bf-febc5f35eaaa}</destination>
+			<destination>{a8e7e254-f34d-4e8a-9fa2-9aa0f3a4bbad}</destination>
+			<destination>{e597698a-9886-429f-94a0-3028fdb45632}</destination>
 		</relationship>
 		<relationship name="returnTracks">
 			<destination>{237b0f4e-ae0e-4df9-8ac6-792745b214ab}</destination>
 			<destination>{197f790a-96cd-4477-a13a-50d57436f77a}</destination>
+			<destination>{efdd809d-7127-46be-a6df-ec9fb74bfc00}</destination>
 		</relationship>
 		<relationship name="timeline">
 			<destination>{493fc852-0e96-4535-ba6c-d3343d247b45}</destination>
@@ -162,9 +165,32 @@ Triggered: When the Goldworm surfaces</value>
 			<destination>{e4959b6a-bf87-4849-a7c6-c0c7b2e263b4}</destination>
 		</relationship>
 	</object>
-	<object class="GroupTrack" id="{fa4effb9-51a0-4f07-a166-3372ea3d74b8}">
+	<object class="GroupTrack" id="{a91c5a81-a6c9-4d98-a0bf-febc5f35eaaa}">
+		<relationship name="modules">
+			<destination>{8d54e13a-9645-4198-8485-66c15e3cdafd}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
-			<destination>{35ab12f7-79a4-456b-881b-b09f22bee4b8}</destination>
+			<destination>{fb025a1f-ab3d-4248-b674-533a7332eb82}</destination>
+		</relationship>
+	</object>
+	<object class="GroupTrack" id="{a8e7e254-f34d-4e8a-9fa2-9aa0f3a4bbad}">
+		<relationship name="automationTracks">
+			<destination>{453b0cf6-116b-4ca0-b7da-e6dc662083fd}</destination>
+			<destination>{891305d9-41f4-4b40-bc5c-77afa2040719}</destination>
+		</relationship>
+		<relationship name="modules">
+			<destination>{211d3f84-7b5d-43ac-991f-0d3cad51b4c6}</destination>
+		</relationship>
+		<relationship name="mixerGroup">
+			<destination>{97ef728c-8b79-442d-9026-aebc22cdfd34}</destination>
+		</relationship>
+	</object>
+	<object class="GroupTrack" id="{e597698a-9886-429f-94a0-3028fdb45632}">
+		<relationship name="modules">
+			<destination>{42593124-6765-49c2-93a1-67892e06a313}</destination>
+		</relationship>
+		<relationship name="mixerGroup">
+			<destination>{211db445-5cb0-4c00-98b6-9ca23a5a8214}</destination>
 		</relationship>
 	</object>
 	<object class="ReturnTrack" id="{237b0f4e-ae0e-4df9-8ac6-792745b214ab}">
@@ -177,6 +203,11 @@ Triggered: When the Goldworm surfaces</value>
 			<destination>{c6cf52d0-8d12-4a79-8307-b5777586b44c}</destination>
 		</relationship>
 	</object>
+	<object class="ReturnTrack" id="{efdd809d-7127-46be-a6df-ec9fb74bfc00}">
+		<relationship name="mixerReturn">
+			<destination>{c884c30c-09f2-402f-b05a-9483a29ab9fc}</destination>
+		</relationship>
+	</object>
 	<object class="Timeline" id="{493fc852-0e96-4535-ba6c-d3343d247b45}">
 		<relationship name="modules">
 			<destination>{6df6476d-0cdb-4e7d-87e5-6a8a81db5926}</destination>
@@ -187,6 +218,9 @@ Triggered: When the Goldworm surfaces</value>
 			<destination>{2eada522-3df4-4ac3-bea0-8c13651c5864}</destination>
 			<destination>{505cf93f-cbe2-4156-8285-7334375744b9}</destination>
 			<destination>{f1352fa0-c7f5-4200-8836-30c63732f773}</destination>
+			<destination>{8d54e13a-9645-4198-8485-66c15e3cdafd}</destination>
+			<destination>{211d3f84-7b5d-43ac-991f-0d3cad51b4c6}</destination>
+			<destination>{42593124-6765-49c2-93a1-67892e06a313}</destination>
 		</relationship>
 	</object>
 	<object class="ActionSheet" id="{fe71f682-fd86-441c-8179-d24560620fbe}">
@@ -214,7 +248,7 @@ Triggered: When the Goldworm surfaces</value>
 	<object class="MixerBusPanner" id="{70571c62-6784-4219-a19b-4c370248bb66}" />
 	<object class="SingleSound" id="{6df6476d-0cdb-4e7d-87e5-6a8a81db5926}">
 		<property name="length">
-			<value>1.2</value>
+			<value>1.1200000000000001</value>
 		</property>
 		<relationship name="fadeOutCurve">
 			<destination>{884766b7-15e1-43c2-a525-f420a18f5057}</destination>
@@ -245,7 +279,7 @@ Triggered: When the Goldworm surfaces</value>
 			<value>0.050000000000000003</value>
 		</property>
 		<property name="length">
-			<value>1.1495918367346938</value>
+			<value>1.0700000000000001</value>
 		</property>
 		<relationship name="fadeOutCurve">
 			<destination>{520a657d-8666-4cb9-af51-85781c8d7f17}</destination>
@@ -451,15 +485,101 @@ Triggered: When the Goldworm surfaces</value>
 			<destination>{94f61dd9-1a65-4f1f-836d-ff2f4d957d65}</destination>
 		</relationship>
 	</object>
-	<object class="EventMixerGroup" id="{35ab12f7-79a4-456b-881b-b09f22bee4b8}">
+	<object class="SingleSound" id="{8d54e13a-9645-4198-8485-66c15e3cdafd}">
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="fadeInCurve">
+			<destination>{b4e19ea3-3bb9-4f47-aa3c-1552c022ea06}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{32ff6b30-15bb-4dae-a531-732799a74903}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{fb025a1f-ab3d-4248-b674-533a7332eb82}">
+		<property name="volume">
+			<value>-15</value>
+		</property>
+		<property name="name">
+			<value>Audio 10</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{d393cb9f-235c-44f8-8a97-9755bd33cc1a}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{08483149-f6a9-4759-a0b3-5a62f74c7cad}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{94f61dd9-1a65-4f1f-836d-ff2f4d957d65}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationTrack" id="{453b0cf6-116b-4ca0-b7da-e6dc662083fd}">
+		<relationship name="automator">
+			<destination>{48636a70-1737-42c8-89d1-a45ea403f4fe}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationTrack" id="{891305d9-41f4-4b40-bc5c-77afa2040719}">
+		<relationship name="automator">
+			<destination>{c3d8f508-df77-4694-95b4-52b727b715bd}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{211d3f84-7b5d-43ac-991f-0d3cad51b4c6}">
+		<property name="length">
+			<value>1.03</value>
+		</property>
+		<relationship name="fadeInCurve">
+			<destination>{8e0f565f-bb77-4784-b4b8-22915404019e}</destination>
+		</relationship>
+		<relationship name="fadeOutCurve">
+			<destination>{52bc91cd-41c4-40f9-8cd0-a15252a3731f}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{daeb5dba-d09d-4e63-a78d-7749d5793d73}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{97ef728c-8b79-442d-9026-aebc22cdfd34}">
+		<property name="volume">
+			<value>-17.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 8</value>
 		</property>
 		<relationship name="effectChain">
-			<destination>{4f57e56b-b532-4454-9826-7e35edc57469}</destination>
+			<destination>{1eccbd44-3da1-41e0-96d8-7b37bd48d4cb}</destination>
 		</relationship>
 		<relationship name="panner">
-			<destination>{8d18b9fc-fe1c-4e96-82b9-e8536aa8fbc4}</destination>
+			<destination>{004759b8-2ca6-4c91-861c-9ae9b07696bf}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{94f61dd9-1a65-4f1f-836d-ff2f4d957d65}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{42593124-6765-49c2-93a1-67892e06a313}">
+		<property name="length">
+			<value>0.28000000000000003</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="fadeOutCurve">
+			<destination>{f3299457-70c7-4297-9228-04116f7987df}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{d4ff465d-e719-43e3-b8da-267ce0f8f55c}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{211db445-5cb0-4c00-98b6-9ca23a5a8214}">
+		<property name="volume">
+			<value>-13.5</value>
+		</property>
+		<property name="name">
+			<value>Audio 9</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{48667210-c0f3-4791-bdc6-23e1412e6b1a}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{58f82b6f-6981-4f69-8a95-df128c8c52c4}</destination>
 		</relationship>
 		<relationship name="output">
 			<destination>{94f61dd9-1a65-4f1f-836d-ff2f4d957d65}</destination>
@@ -488,6 +608,20 @@ Triggered: When the Goldworm surfaces</value>
 		</relationship>
 		<relationship name="panner">
 			<destination>{6d48232f-12c6-44eb-9d5d-10e73dcf0718}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{94f61dd9-1a65-4f1f-836d-ff2f4d957d65}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerReturn" id="{c884c30c-09f2-402f-b05a-9483a29ab9fc}">
+		<property name="name">
+			<value>C</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{f24e42b7-58d7-4967-b58e-c9ac7a4e03aa}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{f106575e-d065-4a7e-809b-4883d194633a}</destination>
 		</relationship>
 		<relationship name="output">
 			<destination>{94f61dd9-1a65-4f1f-836d-ff2f4d957d65}</destination>
@@ -617,12 +751,61 @@ Triggered: When the Goldworm surfaces</value>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{58e946bc-1eb2-4df0-ba65-223a8b4373ae}" />
-	<object class="MixerBusEffectChain" id="{4f57e56b-b532-4454-9826-7e35edc57469}">
-		<relationship name="effects">
-			<destination>{27004a7a-2ebd-4169-ae43-46ce55c8d7ae}</destination>
+	<object class="FadeCurve" id="{b4e19ea3-3bb9-4f47-aa3c-1552c022ea06}">
+		<relationship name="startPoint">
+			<destination>{d462c637-5b21-417f-bf26-3cdc99365407}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{364f47a5-d93f-4b1a-ab15-2ae769b63f3b}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{8d18b9fc-fe1c-4e96-82b9-e8536aa8fbc4}" />
+	<object class="MixerBusEffectChain" id="{d393cb9f-235c-44f8-8a97-9755bd33cc1a}">
+		<relationship name="effects">
+			<destination>{b8a1b7f4-a596-4102-ac59-94fc72b406da}</destination>
+			<destination>{720e0ab9-470c-4c15-9862-778434352cc4}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{08483149-f6a9-4759-a0b3-5a62f74c7cad}" />
+	<object class="FadeCurve" id="{8e0f565f-bb77-4784-b4b8-22915404019e}">
+		<relationship name="startPoint">
+			<destination>{bda39682-ae8c-4987-9ee7-22468d934585}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{8fcb0bad-2bd7-4aa1-b165-e828d5b095d4}</destination>
+		</relationship>
+	</object>
+	<object class="FadeCurve" id="{52bc91cd-41c4-40f9-8cd0-a15252a3731f}">
+		<relationship name="startPoint">
+			<destination>{f03a5165-8c12-421b-8d82-7b789502f81f}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{5c5752f7-e956-4386-8665-f694baa93483}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{1eccbd44-3da1-41e0-96d8-7b37bd48d4cb}">
+		<relationship name="effects">
+			<destination>{e7d1b61a-ea3b-4d2f-8b2f-6dcab905f66c}</destination>
+			<destination>{e41346c6-87ce-48da-a7db-0e56387e615e}</destination>
+			<destination>{71c4b155-4888-469b-ad3e-65514476037e}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{004759b8-2ca6-4c91-861c-9ae9b07696bf}" />
+	<object class="FadeCurve" id="{f3299457-70c7-4297-9228-04116f7987df}">
+		<relationship name="startPoint">
+			<destination>{21d96f38-9cbc-4c49-87da-afde90199d1d}</destination>
+		</relationship>
+		<relationship name="endPoint">
+			<destination>{896f001f-eed7-4c73-87a4-4ca8e24af217}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{48667210-c0f3-4791-bdc6-23e1412e6b1a}">
+		<relationship name="effects">
+			<destination>{843a4dfe-052f-41e3-88f5-2c96fb3e38ec}</destination>
+			<destination>{9ce4d515-687f-4684-b7cb-016afae72ec9}</destination>
+			<destination>{f6314ce6-6f23-4a97-9aa1-c3280465c606}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{58f82b6f-6981-4f69-8a95-df128c8c52c4}" />
 	<object class="MixerBusEffectChain" id="{d551ad91-38b2-4149-8df9-2f693803884a}">
 		<relationship name="effects">
 			<destination>{9677cd75-eae8-412b-a67e-553f491475d5}</destination>
@@ -639,6 +822,12 @@ Triggered: When the Goldworm surfaces</value>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{6d48232f-12c6-44eb-9d5d-10e73dcf0718}" />
+	<object class="MixerBusEffectChain" id="{f24e42b7-58d7-4967-b58e-c9ac7a4e03aa}">
+		<relationship name="effects">
+			<destination>{79bb327b-2f0b-4053-8fdc-71a40c96af16}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{f106575e-d065-4a7e-809b-4883d194633a}" />
 	<object class="DistortionEffect" id="{74427e9e-6241-4500-820c-c391ef1c8c9a}">
 		<property name="level">
 			<value>0.314999998</value>
@@ -663,7 +852,7 @@ Triggered: When the Goldworm surfaces</value>
 	<object class="MixerBusFader" id="{899369e0-437d-4218-a4b7-0c9e6f4b12b6}" />
 	<object class="AutomationPoint" id="{2680228c-9dda-4002-be0a-c8d23dcfcae1}">
 		<property name="position">
-			<value>0.30013605442176872</value>
+			<value>0.22013605442176887</value>
 		</property>
 		<property name="value">
 			<value>1</value>
@@ -674,7 +863,7 @@ Triggered: When the Goldworm surfaces</value>
 	</object>
 	<object class="AutomationPoint" id="{cd6845c7-fc77-48ed-aa19-7656a9421c05}">
 		<property name="position">
-			<value>1.2</value>
+			<value>1.1200000000000001</value>
 		</property>
 		<property name="value">
 			<value>0</value>
@@ -694,7 +883,7 @@ Triggered: When the Goldworm surfaces</value>
 	<object class="MixerBusFader" id="{299dd983-d258-418f-94f4-9fe97eefc43f}" />
 	<object class="AutomationPoint" id="{cf89d89d-310c-4ee3-94b4-78f408a28ba7}">
 		<property name="position">
-			<value>0.49979591836734705</value>
+			<value>0.42020408163265333</value>
 		</property>
 		<property name="value">
 			<value>1</value>
@@ -705,7 +894,7 @@ Triggered: When the Goldworm surfaces</value>
 	</object>
 	<object class="AutomationPoint" id="{9e07edb5-bcbd-4eea-8b07-fde5eb2a0e93}">
 		<property name="position">
-			<value>1.1995918367346938</value>
+			<value>1.1200000000000001</value>
 		</property>
 		<property name="value">
 			<value>0</value>
@@ -811,7 +1000,131 @@ Triggered: When the Goldworm surfaces</value>
 	<object class="MixerBusFader" id="{95acd3ab-5632-42b9-8e5f-57d05f311b63}" />
 	<object class="MixerBusFader" id="{790fa4d0-4df3-4071-9bbc-652af7e77cdb}" />
 	<object class="MixerBusFader" id="{90dab19b-f0bd-4c94-b550-b2752b0f0ce3}" />
-	<object class="MixerBusFader" id="{27004a7a-2ebd-4169-ae43-46ce55c8d7ae}" />
+	<object class="AutomationPoint" id="{d462c637-5b21-417f-bf26-3cdc99365407}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.2547189</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{364f47a5-d93f-4b1a-ab15-2ae769b63f3b}">
+		<property name="position">
+			<value>0.5</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+	</object>
+	<object class="MixerSend" id="{b8a1b7f4-a596-4102-ac59-94fc72b406da}">
+		<property name="level">
+			<value>0</value>
+		</property>
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{c884c30c-09f2-402f-b05a-9483a29ab9fc}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusFader" id="{720e0ab9-470c-4c15-9862-778434352cc4}" />
+	<object class="AutomationPoint" id="{bda39682-ae8c-4987-9ee7-22468d934585}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.2547189</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{8fcb0bad-2bd7-4aa1-b165-e828d5b095d4}">
+		<property name="position">
+			<value>0.5</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{f03a5165-8c12-421b-8d82-7b789502f81f}">
+		<property name="position">
+			<value>0.83999999999999997</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+		<property name="curveShape">
+			<value>0.25471893</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{5c5752f7-e956-4386-8665-f694baa93483}">
+		<property name="position">
+			<value>1.03</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="MultibandEqEffect" id="{e7d1b61a-ea3b-4d2f-8b2f-6dcab905f66c}">
+		<property name="filterTypeB">
+			<value>8</value>
+		</property>
+		<property name="frequencyB">
+			<value>41.3016243</value>
+		</property>
+		<property name="gainB">
+			<value>9.3103447</value>
+		</property>
+		<relationship name="automators">
+			<destination>{48636a70-1737-42c8-89d1-a45ea403f4fe}</destination>
+			<destination>{c3d8f508-df77-4694-95b4-52b727b715bd}</destination>
+		</relationship>
+	</object>
+	<object class="MixerSend" id="{e41346c6-87ce-48da-a7db-0e56387e615e}">
+		<property name="level">
+			<value>0</value>
+		</property>
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{c884c30c-09f2-402f-b05a-9483a29ab9fc}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusFader" id="{71c4b155-4888-469b-ad3e-65514476037e}" />
+	<object class="AutomationPoint" id="{21d96f38-9cbc-4c49-87da-afde90199d1d}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+		<property name="curveShape">
+			<value>0.25471893</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{896f001f-eed7-4c73-87a4-4ca8e24af217}">
+		<property name="position">
+			<value>0.28000000000000003</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="PitchShifterEffect" id="{843a4dfe-052f-41e3-88f5-2c96fb3e38ec}" />
+	<object class="MultibandEqEffect" id="{9ce4d515-687f-4684-b7cb-016afae72ec9}">
+		<property name="frequencyA">
+			<value>439.285004</value>
+		</property>
+		<property name="qualityA">
+			<value>2.41379333</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{f6314ce6-6f23-4a97-9aa1-c3280465c606}" />
 	<object class="MultibandEqEffect" id="{9677cd75-eae8-412b-a67e-553f491475d5}">
 		<property name="filterTypeB">
 			<value>7</value>
@@ -864,12 +1177,82 @@ Triggered: When the Goldworm surfaces</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{4b552023-849b-4af5-bcc5-fad82e248022}" />
+	<object class="MixerBusFader" id="{79bb327b-2f0b-4053-8fdc-71a40c96af16}" />
+	<object class="Automator" id="{48636a70-1737-42c8-89d1-a45ea403f4fe}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>frequencyA</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{ecdab3b4-0b45-4c14-9be2-c05ca030069a}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{c3d8f508-df77-4694-95b4-52b727b715bd}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>gainB</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{5d02898c-04ef-4871-b99f-07f0a48faab6}</destination>
+		</relationship>
+	</object>
 	<object class="RandomizerModulator" id="{5f262cba-1d98-469c-b63d-33c9d6f2ce1b}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
 		</property>
 		<property name="amount">
 			<value>21.5</value>
+		</property>
+	</object>
+	<object class="AutomationCurve" id="{ecdab3b4-0b45-4c14-9be2-c05ca030069a}">
+		<relationship name="parameter">
+			<destination>{493fc852-0e96-4535-ba6c-d3343d247b45}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{2e112572-6224-404a-9e09-3429eda22eb4}</destination>
+			<destination>{00580e51-fce7-4d75-b023-5392a37ea253}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationCurve" id="{5d02898c-04ef-4871-b99f-07f0a48faab6}">
+		<relationship name="parameter">
+			<destination>{493fc852-0e96-4535-ba6c-d3343d247b45}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{e8a83b3a-c131-4c4c-b36d-0617b68cc9e6}</destination>
+			<destination>{a4e6dca4-99fd-4096-8379-be40667d4fa2}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{2e112572-6224-404a-9e09-3429eda22eb4}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>20</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.851056218</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{00580e51-fce7-4d75-b023-5392a37ea253}">
+		<property name="position">
+			<value>1.02</value>
+		</property>
+		<property name="value">
+			<value>22000</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{e8a83b3a-c131-4c4c-b36d-0617b68cc9e6}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>-30</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{a4e6dca4-99fd-4096-8379-be40667d4fa2}">
+		<property name="position">
+			<value>1.03</value>
+		</property>
+		<property name="value">
+			<value>15</value>
 		</property>
 	</object>
 </objects>

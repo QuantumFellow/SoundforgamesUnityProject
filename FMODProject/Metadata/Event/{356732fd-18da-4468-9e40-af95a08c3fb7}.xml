@@ -171,7 +171,7 @@ Triggered: When the droid fires a seed</value>
 	</object>
 	<object class="EventMixerGroup" id="{e837474e-30c0-4b75-b2a1-52d92bfe1e51}">
 		<property name="volume">
-			<value>-6.5</value>
+			<value>-3</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>
@@ -189,6 +189,7 @@ Triggered: When the droid fires a seed</value>
 	<object class="MixerBusEffectChain" id="{54d377bb-9c43-46b5-85d1-eb8f224c93cc}">
 		<relationship name="effects">
 			<destination>{94ffc39a-a42f-424b-944a-65d6f28bc0bc}</destination>
+			<destination>{3bb94188-8b12-4f10-9e07-b3658044d92b}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{fce753f2-c935-46fc-a04a-0321a0892897}">
@@ -216,6 +217,11 @@ Triggered: When the droid fires a seed</value>
 	</object>
 	<object class="MixerBusPanner" id="{3db84c17-2566-4071-8a4e-ed0cc8147143}" />
 	<object class="MixerBusFader" id="{94ffc39a-a42f-424b-944a-65d6f28bc0bc}" />
+	<object class="SpatialiserEffect" id="{3bb94188-8b12-4f10-9e07-b3658044d92b}">
+		<property name="maximumDistance">
+			<value>50</value>
+		</property>
+	</object>
 	<object class="SFXReverbEffect" id="{ad29fbeb-17a8-4058-b9a2-d8305c6c9535}">
 		<property name="decayTime">
 			<value>260</value>

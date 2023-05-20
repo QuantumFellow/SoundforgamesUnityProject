@@ -179,6 +179,7 @@ Triggered: On Start</value>
 			<destination>{fdbe1c95-dde4-440f-ac0a-37883884f935}</destination>
 			<destination>{6a3754dc-a480-430d-869a-b493a10e4086}</destination>
 			<destination>{8c67ac3b-def0-474c-ad6c-769af9ce3a21}</destination>
+			<destination>{8fd353a8-489a-4e78-b9ea-953ff4bf2298}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b841ea01-69eb-4958-a2fd-662dde869a33}">
@@ -239,6 +240,14 @@ Triggered: On Start</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{8c67ac3b-def0-474c-ad6c-769af9ce3a21}" />
+	<object class="SpatialiserEffect" id="{8fd353a8-489a-4e78-b9ea-953ff4bf2298}">
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>90</value>
+		</property>
+	</object>
 	<object class="AutomationCurve" id="{a924fb2d-34b6-48c4-b20e-c9f47719b2ba}">
 		<relationship name="parameter">
 			<destination>{1205418e-5eee-447c-9330-c2e714fe0227}</destination>
@@ -275,7 +284,7 @@ Triggered: On Start</value>
 			<value>60</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-2</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{ee327905-17c8-4431-a508-219200d57f7d}">
@@ -283,7 +292,7 @@ Triggered: On Start</value>
 			<value>14</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-2</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{b05099e8-a065-4405-b02a-0226315d53f2}">
@@ -291,7 +300,7 @@ Triggered: On Start</value>
 			<value>181.05489773950484</value>
 		</property>
 		<property name="value">
-			<value>5</value>
+			<value>3</value>
 		</property>
 	</object>
 	<object class="AutomationCurve" id="{20368d39-60c8-4421-b10a-3a62c4da7126}">
