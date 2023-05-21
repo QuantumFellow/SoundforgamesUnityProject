@@ -245,10 +245,10 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638202040061350021
+  lastModified: 638202665123716272
   FileSizes:
   - Name: Desktop
-    Value: 3364992
+    Value: 3754752
   Exists: 1
 --- !u!114 &-7218288516651920230
 MonoBehaviour:
@@ -265,7 +265,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638202040059326420
+  lastModified: 638202665117392530
   FileSizes:
   - Name: Desktop
     Value: 4238
@@ -371,7 +371,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 16788
+  Length: 4194
 --- !u!114 &-5921883069463290245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,13 +528,13 @@ MonoBehaviour:
     Data4: -1843122559
   Banks:
   - {fileID: -7470815133711611052}
-  IsStream: 0
+  IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 30
-  Length: 1000
+  Length: 6179
 --- !u!114 &-3288028087839913496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -783,7 +783,7 @@ MonoBehaviour:
   - {fileID: 4450031680838293598}
   StringsBanks:
   - {fileID: -7218288516651920230}
-  cacheTime: 638202040061350021
+  cacheTime: 638202665123716272
   cacheVersion: 10
 --- !u!114 &525602267344705921
 MonoBehaviour:
@@ -936,7 +936,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638202040059548760
+  lastModified: 638202665117790292
   FileSizes:
   - Name: Desktop
     Value: 5912384
@@ -1090,7 +1090,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638202040059305850
+  lastModified: 638202665117372528
   FileSizes:
   - Name: Desktop
     Value: 265184
@@ -1534,7 +1534,7 @@ MonoBehaviour:
   Parameters:
   - {fileID: 7080756460542731162}
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 300
   Length: 10191
 --- !u!114 &8691397476408717107
 MonoBehaviour:
