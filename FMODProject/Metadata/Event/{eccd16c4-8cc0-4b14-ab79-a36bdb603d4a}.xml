@@ -77,6 +77,9 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 		<property name="priority">
 			<value>3</value>
 		</property>
+		<property name="maximumDistance">
+			<value>300</value>
+		</property>
 	</object>
 	<object class="MarkerTrack" id="{ebd8b391-2de3-4814-a3e6-a5fff76620a5}" />
 	<object class="GroupTrack" id="{0f196c46-8773-445c-a48a-a5dfb7674877}">
@@ -344,7 +347,11 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 			<destination>{151db8dc-0b0d-467e-93ff-a65906845e5a}</destination>
 		</relationship>
 	</object>
-	<object class="SpatialiserEffect" id="{e897874d-c09d-4c62-9e31-85c3b0691595}" />
+	<object class="SpatialiserEffect" id="{e897874d-c09d-4c62-9e31-85c3b0691595}">
+		<property name="maximumDistance">
+			<value>300</value>
+		</property>
+	</object>
 	<object class="RandomizerModulator" id="{a08e90d7-3aef-4d44-837a-f14d43fc6a17}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>stereoPan</value>

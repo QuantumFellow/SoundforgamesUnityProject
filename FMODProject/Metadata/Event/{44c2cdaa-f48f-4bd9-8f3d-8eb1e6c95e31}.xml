@@ -118,7 +118,6 @@ Triggered: When the Goldworm has taken a certain amount of damage</value>
 	<object class="GroupTrack" id="{23602c83-8c67-4a8f-aa8c-79deabe5e2f3}">
 		<relationship name="modules">
 			<destination>{d2d8531c-bb8f-4779-8549-6d97d0e7fbe8}</destination>
-			<destination>{f0761fa1-c00b-4660-850a-18048048389e}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{e88509bf-5a58-4d4b-a2ec-6d5d9b2d8f6a}</destination>
@@ -139,7 +138,6 @@ Triggered: When the Goldworm has taken a certain amount of damage</value>
 			<destination>{1c17bd68-3f80-4033-b5ca-50a51b07009f}</destination>
 			<destination>{d2d8531c-bb8f-4779-8549-6d97d0e7fbe8}</destination>
 			<destination>{30f0dae0-481f-470b-a31a-13f54a270b47}</destination>
-			<destination>{f0761fa1-c00b-4660-850a-18048048389e}</destination>
 		</relationship>
 	</object>
 	<object class="ActionSheet" id="{22ab1faf-39b6-4442-adf1-9a1056963228}">
@@ -281,20 +279,6 @@ Triggered: When the Goldworm has taken a certain amount of damage</value>
 			<destination>{8a3cc5c4-899b-48e7-b49e-f4427c634572}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{f0761fa1-c00b-4660-850a-18048048389e}">
-		<property name="start">
-			<value>15.488234660925725</value>
-		</property>
-		<property name="length">
-			<value>1.2998639455782313</value>
-		</property>
-		<relationship name="fadeOutCurve">
-			<destination>{175d8e5d-0a27-4437-b4fc-d15db416e135}</destination>
-		</relationship>
-		<relationship name="audioFile">
-			<destination>{8a3cc5c4-899b-48e7-b49e-f4427c634572}</destination>
-		</relationship>
-	</object>
 	<object class="EventMixerGroup" id="{e88509bf-5a58-4d4b-a2ec-6d5d9b2d8f6a}">
 		<property name="volume">
 			<value>-27</value>
@@ -421,14 +405,6 @@ Triggered: When the Goldworm has taken a certain amount of damage</value>
 		</relationship>
 		<relationship name="endPoint">
 			<destination>{cc12c5c2-7a31-49c2-94a9-f5d5b2498049}</destination>
-		</relationship>
-	</object>
-	<object class="FadeCurve" id="{175d8e5d-0a27-4437-b4fc-d15db416e135}">
-		<relationship name="startPoint">
-			<destination>{acc8d44a-a244-4af9-8db2-9abbe84779ea}</destination>
-		</relationship>
-		<relationship name="endPoint">
-			<destination>{149903e6-48ec-4c7c-be02-fdc7cf36a745}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{86984a24-10fb-4421-b439-fdb38fd53f79}">
@@ -627,25 +603,6 @@ Triggered: When the Goldworm has taken a certain amount of damage</value>
 	<object class="AutomationPoint" id="{cc12c5c2-7a31-49c2-94a9-f5d5b2498049}">
 		<property name="position">
 			<value>1.2998639455782313</value>
-		</property>
-		<property name="value">
-			<value>0</value>
-		</property>
-	</object>
-	<object class="AutomationPoint" id="{acc8d44a-a244-4af9-8db2-9abbe84779ea}">
-		<property name="position">
-			<value>15.488234660925725</value>
-		</property>
-		<property name="value">
-			<value>1</value>
-		</property>
-		<property name="curveShape">
-			<value>0.25471893</value>
-		</property>
-	</object>
-	<object class="AutomationPoint" id="{149903e6-48ec-4c7c-be02-fdc7cf36a745}">
-		<property name="position">
-			<value>16.788098606503958</value>
 		</property>
 		<property name="value">
 			<value>0</value>
