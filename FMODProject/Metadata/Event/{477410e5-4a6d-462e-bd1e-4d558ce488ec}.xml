@@ -10,7 +10,19 @@ The lightning parameter is a discrete value, where 0 is no lightning and 1 is li
 
 Event Type: 2D
 Location: 0/Managers/WeatherManager/WeatherManager.cs
-Triggered: On Start</value>
+Triggered: On Start
+--------------------------------------------------------------------------------
+RAIN- On the rain I used 3 freesound audios low intense frying, high frying and water droplets. I used noise removal to clear up the droplets and then individually captured the droplets. There is a pitch and volume randomiser on it for variety. I captured foley of rice on paper for a good lower base and added automation of the volume on the white noise so that when the rain gets heavier. I had to comb through the audios of the bacon just to cut out any background noise.
+
+https://freesound.org/people/odilonmarcenaro/sounds/579088/ -rain/bacon intense (more intense rain)
+
+https://freesound.org/people/piratecesar/sounds/215487/ -more bacon (low intense rain)
+
+https://freesound.org/people/Legnalegna55/sounds/543649/ - Water droplets used in rain (removed noise from bg and used individual droplets in a scatterer)
+
+WIND- Just used generated brown noise as I didnt want the wind to be overwhelming. The brown noise feels close to your ears which I think is a good feel for wind to have. It gets louder as the wind is more prevalent. HAs an EQ and a Low Pass to soften it
+
+LIGHTNING- Foley sound. Ben blew directly into the mic and I felt it made a good noise for thunder as it was close and with some reverb and an EQ I'm really happt with it.</value>
 		</property>
 		<property name="name">
 			<value>Weather</value>
@@ -380,7 +392,7 @@ Triggered: On Start</value>
 			<value>Blue Light 1</value>
 		</property>
 		<property name="volume">
-			<value>-6</value>
+			<value>-80</value>
 		</property>
 		<property name="name">
 			<value>Audio 4</value>
@@ -540,7 +552,7 @@ Triggered: On Start</value>
 			<value>Magenta</value>
 		</property>
 		<property name="volume">
-			<value>10</value>
+			<value>8.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 6</value>
@@ -575,6 +587,9 @@ Triggered: On Start</value>
 		</relationship>
 	</object>
 	<object class="EventMixerReturn" id="{b89ef69d-e709-4eb1-9a6f-2726b261ff58}">
+		<property name="volume">
+			<value>4.5</value>
+		</property>
 		<property name="name">
 			<value>B</value>
 		</property>
@@ -1083,10 +1098,10 @@ Triggered: On Start</value>
 			<destination>{aa37dcda-6161-459d-bdf5-9400828f7ed3}</destination>
 		</relationship>
 		<relationship name="automationPoints">
-			<destination>{bd808f8a-fe97-4f4e-a073-8ef3ea85a9f5}</destination>
 			<destination>{01f59bb2-9247-405c-b42b-3dd94feaad10}</destination>
 			<destination>{b8792a91-1673-43ae-9d94-517e5059c9e3}</destination>
 			<destination>{506b5c6f-66ca-4993-a879-8a4d9e5ea68c}</destination>
+			<destination>{0b9ab339-2080-4033-858e-28843fff83b6}</destination>
 		</relationship>
 	</object>
 	<object class="MultibandEqEffect" id="{7ab9f4aa-f8bb-4806-a6b7-03c523b591d7}" />
@@ -1228,7 +1243,7 @@ Triggered: On Start</value>
 			<value>0.96999999999999997</value>
 		</property>
 		<property name="value">
-			<value>-12.6687355</value>
+			<value>-80</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{19bc6175-d094-44c5-9cfc-7330671b8674}">
@@ -1236,7 +1251,7 @@ Triggered: On Start</value>
 			<value>0.63</value>
 		</property>
 		<property name="value">
-			<value>-44.9218369</value>
+			<value>-80</value>
 		</property>
 		<property name="curveShape">
 			<value>-0.853864729</value>
@@ -1331,14 +1346,6 @@ Triggered: On Start</value>
 			<value>-1</value>
 		</property>
 	</object>
-	<object class="AutomationPoint" id="{bd808f8a-fe97-4f4e-a073-8ef3ea85a9f5}">
-		<property name="position">
-			<value>3</value>
-		</property>
-		<property name="value">
-			<value>-3</value>
-		</property>
-	</object>
 	<object class="AutomationPoint" id="{01f59bb2-9247-405c-b42b-3dd94feaad10}">
 		<property name="position">
 			<value>1.1400000000000001</value>
@@ -1364,6 +1371,14 @@ Triggered: On Start</value>
 		</property>
 		<property name="value">
 			<value>-80</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{0b9ab339-2080-4033-858e-28843fff83b6}">
+		<property name="position">
+			<value>2.9999791666666669</value>
+		</property>
+		<property name="value">
+			<value>0</value>
 		</property>
 	</object>
 	<object class="Automator" id="{a86b17fb-ee7e-4b87-8330-02ccf4e0a3a6}">

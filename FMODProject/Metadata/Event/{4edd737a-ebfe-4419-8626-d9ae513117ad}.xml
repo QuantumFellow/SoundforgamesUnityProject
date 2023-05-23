@@ -145,7 +145,7 @@ Triggered: When switching tool</value>
 			<value>1</value>
 		</property>
 		<property name="pitch">
-			<value>4</value>
+			<value>2</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{6f2ab6fc-2941-4485-bda9-2ae45d5aa834}</destination>
@@ -156,7 +156,7 @@ Triggered: When switching tool</value>
 			<value>2</value>
 		</property>
 		<property name="pitch">
-			<value>4</value>
+			<value>3</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{6f2ab6fc-2941-4485-bda9-2ae45d5aa834}</destination>

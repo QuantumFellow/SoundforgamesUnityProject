@@ -245,10 +245,10 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638203919668272365
+  lastModified: 638204428407560578
   FileSizes:
   - Name: Desktop
-    Value: 3781760
+    Value: 3784704
   Exists: 1
 --- !u!114 &-7218288516651920230
 MonoBehaviour:
@@ -265,7 +265,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638203919662791381
+  lastModified: 638204428402478336
   FileSizes:
   - Name: Desktop
     Value: 4238
@@ -666,13 +666,13 @@ MonoBehaviour:
   - {fileID: 2219128681694567007}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: 661380106632170095}
   - {fileID: 3208199552283079690}
   MinDistance: 1
   MaxDistance: 20
-  Length: 1002707
+  Length: 0
 --- !u!114 &-899922191731042227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,7 +784,7 @@ MonoBehaviour:
   - {fileID: 4450031680838293598}
   StringsBanks:
   - {fileID: -7218288516651920230}
-  cacheTime: 638203919668272365
+  cacheTime: 638204428407560578
   cacheVersion: 10
 --- !u!114 &525602267344705921
 MonoBehaviour:
@@ -859,7 +859,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -7470815133711611052}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
@@ -961,10 +961,10 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638203919663370709
+  lastModified: 638204428403276665
   FileSizes:
   - Name: Desktop
-    Value: 5912384
+    Value: 5914816
   Exists: 1
 --- !u!114 &2861815292184536797
 MonoBehaviour:
@@ -1115,7 +1115,7 @@ MonoBehaviour:
   Path: FMODProject/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638203919662781381
+  lastModified: 638204428402397933
   FileSizes:
   - Name: Desktop
     Value: 292288
@@ -1245,7 +1245,7 @@ MonoBehaviour:
   - {fileID: -7470815133711611052}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 30

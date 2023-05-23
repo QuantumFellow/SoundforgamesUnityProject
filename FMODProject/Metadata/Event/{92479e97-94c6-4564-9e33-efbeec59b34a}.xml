@@ -217,6 +217,9 @@ Location: 0/Managers/GameManager/GameManager/cs (instance)</value>
 		<property name="pitch">
 			<value>1</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{947759a8-b1d0-47f1-9ab2-9fd766d71a3e}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{0e8cf6cb-955f-4b49-a78e-b86b0c63f63e}</destination>
 		</relationship>
@@ -263,6 +266,35 @@ Location: 0/Managers/GameManager/GameManager/cs (instance)</value>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{be46f009-6b0f-437f-92c7-a6a3669282f6}" />
+	<object class="ADSRModulator" id="{947759a8-b1d0-47f1-9ab2-9fd766d71a3e}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="peakValue">
+			<value>-0.577777863</value>
+		</property>
+		<property name="holdTime">
+			<value>0</value>
+		</property>
+		<property name="decayTime">
+			<value>506.410553</value>
+		</property>
+		<property name="decayShape">
+			<value>-0.164877236</value>
+		</property>
+		<property name="sustainValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{4d7d7b36-a0de-4694-ad89-34bdef8ac918}">
 		<relationship name="effects">
 			<destination>{ee3f8299-ea9a-42e1-8c85-bfac171d6ca4}</destination>

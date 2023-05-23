@@ -6,7 +6,9 @@
 
 Event Type: 3D
 Location: 0/Managers/AntManager/Ant/AntBehaviour.cs (Instance)
-Triggered: if the ants velocity exceeds 2 (if the player runs into them etc).</value>
+Triggered: if the ants velocity exceeds 2 (if the player runs into them etc).
+--------------------------------------------------------------------------------
+Foley was used to create these sounds. We had a bunch of rough quartz pieces in a pillow case and shook them gently allowing for this 'marble' noise. I added reverb so the sounds trails as you move through and I also added pitch randomisation for more variety too the sounds. I think they blend well together</value>
 		</property>
 		<property name="name">
 			<value>Ant</value>

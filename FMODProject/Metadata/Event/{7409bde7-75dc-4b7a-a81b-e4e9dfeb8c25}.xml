@@ -134,7 +134,7 @@ Triggered: When the Goldworm goes underground
 	</object>
 	<object class="EventMixerMaster" id="{41ae6a58-3b19-481d-8b74-6ab974f7c5ce}">
 		<property name="volume">
-			<value>-5.5</value>
+			<value>-5</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{72518752-755d-4bba-ba57-dc2e812cef18}</destination>
@@ -258,6 +258,7 @@ Triggered: When the Goldworm goes underground
 	<object class="MixerBusEffectChain" id="{72518752-755d-4bba-ba57-dc2e812cef18}">
 		<relationship name="effects">
 			<destination>{369181f0-101a-40f7-b7f0-4f93412550c9}</destination>
+			<destination>{6a2282fd-f6dd-4c50-bbd4-67cd15cdbeff}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9bf49f88-31cf-4618-80a5-19383cb3d822}">
@@ -313,6 +314,14 @@ Triggered: When the Goldworm goes underground
 	</object>
 	<object class="MixerBusPanner" id="{57e50b82-129a-47b8-988f-1a584a147667}" />
 	<object class="MixerBusFader" id="{369181f0-101a-40f7-b7f0-4f93412550c9}" />
+	<object class="SpatialiserEffect" id="{6a2282fd-f6dd-4c50-bbd4-67cd15cdbeff}">
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>55</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{18f11f7d-81b1-495f-9ea5-b2d7ece4134b}">
 		<property name="position">
 			<value>0.44</value>

@@ -6,7 +6,8 @@
 
 Event Type: 3D
 Location: Prefabs: CactusOne,CactusTwo,CactusThree,CactusFour 
-Triggered: When a seed is fired from the droid and impacts the ground</value>
+Triggered: When a seed is fired from the droid and impacts the ground
+-----------------------------------------------------------------------------------GROW- grow was foley and made by twisting a fake plant. Rumble was a freesound clip as I felt it was appro</value>
 		</property>
 		<property name="name">
 			<value>Grow</value>
@@ -251,7 +252,7 @@ Triggered: When a seed is fired from the droid and impacts the ground</value>
 	</object>
 	<object class="EventMixerGroup" id="{1e907764-7fe1-4041-8da6-dd54e4cd44ef}">
 		<property name="volume">
-			<value>-35</value>
+			<value>-80</value>
 		</property>
 		<property name="name">
 			<value>Audio 8</value>
@@ -296,7 +297,7 @@ Triggered: When a seed is fired from the droid and impacts the ground</value>
 	</object>
 	<object class="EventMixerReturn" id="{182a4ddf-33f3-4f1e-aefd-e382417bdbbc}">
 		<property name="volume">
-			<value>-18.5</value>
+			<value>-23.5</value>
 		</property>
 		<property name="name">
 			<value>C</value>

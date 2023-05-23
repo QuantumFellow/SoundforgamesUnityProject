@@ -405,9 +405,9 @@ Triggered: On Start
 			<destination>{f8537c89-f90e-4f7d-b703-4f2ce53d19c3}</destination>
 		</relationship>
 		<relationship name="automationPoints">
-			<destination>{335cadea-f82f-4412-ae5d-eb25ca95ee94}</destination>
 			<destination>{51848b13-87dd-4cf4-a997-a20bf27f2c75}</destination>
 			<destination>{7bb0a03e-4498-4cb0-bd17-a3a5b4eec4c8}</destination>
+			<destination>{373424d1-66cd-43c9-b447-329ba96f0433}</destination>
 		</relationship>
 	</object>
 	<object class="MultibandEqEffect" id="{914cf634-1722-4dbd-b874-68a484fd3320}">
@@ -483,20 +483,12 @@ Triggered: On Start
 			<value>-17</value>
 		</property>
 	</object>
-	<object class="AutomationPoint" id="{335cadea-f82f-4412-ae5d-eb25ca95ee94}">
-		<property name="position">
-			<value>17</value>
-		</property>
-		<property name="value">
-			<value>2</value>
-		</property>
-	</object>
 	<object class="AutomationPoint" id="{51848b13-87dd-4cf4-a997-a20bf27f2c75}">
 		<property name="position">
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-30</value>
+			<value>2</value>
 		</property>
 		<property name="curveShape">
 			<value>-0.512490034</value>
@@ -504,10 +496,21 @@ Triggered: On Start
 	</object>
 	<object class="AutomationPoint" id="{7bb0a03e-4498-4cb0-bd17-a3a5b4eec4c8}">
 		<property name="position">
-			<value>19.800000000000001</value>
+			<value>20</value>
+		</property>
+		<property name="value">
+			<value>-30</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{373424d1-66cd-43c9-b447-329ba96f0433}">
+		<property name="position">
+			<value>2.4000000000000004</value>
 		</property>
 		<property name="value">
 			<value>2</value>
+		</property>
+		<property name="curveShape">
+			<value>0.18560265</value>
 		</property>
 	</object>
 	<object class="Automator" id="{1ca7ac51-67cf-44e0-a497-c0ba81a2aabc}">
@@ -534,6 +537,7 @@ Triggered: On Start
 		<relationship name="automationPoints">
 			<destination>{121c2f6c-f94a-4955-b57d-9011a90107c4}</destination>
 			<destination>{0cffa5ad-5ab3-4ea4-ac59-6c718fbb0f55}</destination>
+			<destination>{1a7f854a-c240-495c-a301-bbc3af718a2a}</destination>
 		</relationship>
 	</object>
 	<object class="AutomationPoint" id="{ea29250a-f5a7-4330-9882-96bbf8f1d5f6}">
@@ -557,12 +561,20 @@ Triggered: On Start
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>0.199999988</value>
+			<value>0.659999967</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{0cffa5ad-5ab3-4ea4-ac59-6c718fbb0f55}">
 		<property name="position">
-			<value>19.200000000000003</value>
+			<value>20</value>
+		</property>
+		<property name="value">
+			<value>0.199999988</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{1a7f854a-c240-495c-a301-bbc3af718a2a}">
+		<property name="position">
+			<value>1.6000000000000001</value>
 		</property>
 		<property name="value">
 			<value>0.659999967</value>

@@ -123,7 +123,7 @@ Triggered: Upon getting to within a certain distance to the radiation zone</valu
 	</object>
 	<object class="EventMixerMaster" id="{92e278d1-8fd6-4984-b73d-035c3cce9687}">
 		<property name="volume">
-			<value>-4.5</value>
+			<value>-2</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{05815ff2-2124-4316-9c97-82b7728f1454}</destination>

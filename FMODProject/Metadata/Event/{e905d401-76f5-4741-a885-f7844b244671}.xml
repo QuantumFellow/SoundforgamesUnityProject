@@ -15,6 +15,8 @@ The footstep event is triggered when the feet of the character hit the floor dur
 Event Type: 3D
 Location: 0/Player/Player.cs (Instance)
 Triggered: When the feet of the character animation touch the floor.
+--------------------------------------------------------------------------------
+Added around 20 diff footsteps (recorded in foley room) per surface and a pitch randomiser to givbe variety. To add coherence to the footsteps I added clothing noises recorded at home. Our Rock Footsteps were too
 </value>
 		</property>
 		<property name="name">
@@ -317,7 +319,7 @@ Triggered: When the feet of the character animation touch the floor.
 	</object>
 	<object class="EventMixerGroup" id="{4874135f-7643-413e-8549-1b83923a0732}">
 		<property name="volume">
-			<value>-17</value>
+			<value>-12</value>
 		</property>
 		<property name="name">
 			<value>Metal</value>

@@ -158,7 +158,7 @@ Triggered: When scanning a cactus
 	</object>
 	<object class="EventMixerGroup" id="{582cf277-07ea-4182-9600-99c705bf6e08}">
 		<property name="volume">
-			<value>-6</value>
+			<value>-11.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -189,7 +189,7 @@ Triggered: When scanning a cactus
 	</object>
 	<object class="EventMixerGroup" id="{847b6f29-bb1a-44ef-95e8-44f5dc0e6994}">
 		<property name="volume">
-			<value>-9</value>
+			<value>-12.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>

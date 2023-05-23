@@ -109,6 +109,9 @@ Triggered: Upon getting to within a certain distance of the radiation zone</valu
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{c3f11b22-96f8-471c-8dc4-f8be78ba294b}">
+		<property name="volume">
+			<value>-10</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{93f8c5b8-fa4f-4ed1-8b18-601f84fe516e}</destination>
 		</relationship>

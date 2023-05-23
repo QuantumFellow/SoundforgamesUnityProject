@@ -7,7 +7,8 @@
 
 Event Type: 2D
 Location: 0/Managers/WeatherManager/TimeManager.cs
-Triggered: On Start</value>
+Triggered: On Start
+-----------------------------------------------------------------------------------ADDED MUSIC FOR AMBIENCE (SEE MUSIC FOLDER)</value>
 		</property>
 		<property name="name">
 			<value>TimeOfDay</value>

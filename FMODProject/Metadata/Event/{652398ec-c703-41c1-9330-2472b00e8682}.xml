@@ -229,6 +229,9 @@ Triggered: When the Goldworm surfaces</value>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{94f61dd9-1a65-4f1f-836d-ff2f4d957d65}">
+		<property name="volume">
+			<value>-7.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{557f3810-9770-491e-b4db-90c63f9d0a82}</destination>
 		</relationship>

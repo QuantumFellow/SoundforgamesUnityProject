@@ -8,7 +8,8 @@ If these objects are struck by the fire particle system from the goldworm they w
 
 Event Type: 3D
 Location: Prefab Fire01
-Triggered: If Player or Cactus are ignited by GoldWorm.</value>
+Triggered: If Player or Cactus are ignited by GoldWorm.
+-----------------------------------------------------------------------------------FIRE- Made with Foley of crisp packet, had some soft crinkling into my home mic, added some harsher crackles in a scatterer</value>
 		</property>
 		<property name="name">
 			<value>OnFire</value>
@@ -39,6 +40,7 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 			<destination>{528a3dc4-4da6-49e2-ac50-7c3cfee15410}</destination>
 			<destination>{4780c57f-ff61-4c1a-880c-4e03e1c6af30}</destination>
 			<destination>{bb804095-12b6-400c-8463-2e40564fc67e}</destination>
+			<destination>{67dff77f-03e4-4648-98f1-10afc08ca482}</destination>
 		</relationship>
 		<relationship name="timeline">
 			<destination>{cdcdd685-2392-478b-a7c9-4126a73710d5}</destination>
@@ -121,12 +123,21 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 			<destination>{fd4ada97-da1f-4d88-9734-cb0b9b4fb22e}</destination>
 		</relationship>
 	</object>
+	<object class="GroupTrack" id="{67dff77f-03e4-4648-98f1-10afc08ca482}">
+		<relationship name="modules">
+			<destination>{7130ed2a-c31f-44f2-bc22-8bb99aad7ba8}</destination>
+		</relationship>
+		<relationship name="mixerGroup">
+			<destination>{2600c982-4cbe-48b5-81a3-f4ffe0f84d9a}</destination>
+		</relationship>
+	</object>
 	<object class="Timeline" id="{cdcdd685-2392-478b-a7c9-4126a73710d5}">
 		<relationship name="modules">
 			<destination>{cb7152cb-32bd-4c60-8ede-f0e5f643897a}</destination>
 			<destination>{3eac73fc-9393-4381-a808-23d1bdc3ae97}</destination>
 			<destination>{6d89f650-61c1-4542-9381-e25080655265}</destination>
 			<destination>{0683f5b8-a53a-42d0-96c2-65f23af25069}</destination>
+			<destination>{7130ed2a-c31f-44f2-bc22-8bb99aad7ba8}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{62e9f4fb-16cf-4b3e-88d9-887024456363}</destination>
@@ -177,7 +188,7 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 	</object>
 	<object class="EventMixerGroup" id="{7c090f67-aee7-43e9-abc0-d36a9e6b80a3}">
 		<property name="volume">
-			<value>-28</value>
+			<value>-29.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>
@@ -290,6 +301,40 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 		</relationship>
 		<relationship name="panner">
 			<destination>{b48f4842-9eba-4585-99e5-8da1fd06c7c4}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{33318255-fc2b-4826-bf4c-176f0eef34b0}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{7130ed2a-c31f-44f2-bc22-8bb99aad7ba8}">
+		<property name="length">
+			<value>6.1796825396825401</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{9a60b72b-38e9-4d08-93bb-e8bb47f7e78b}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{5818b0bf-9f4b-4af0-ae5c-09b4a854cd60}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{2600c982-4cbe-48b5-81a3-f4ffe0f84d9a}">
+		<property name="volume">
+			<value>-23.5</value>
+		</property>
+		<property name="name">
+			<value>Audio 1</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{dd4466d7-48e3-4cfd-a5ba-62ac957d98cc}</destination>
+		</relationship>
+		<relationship name="effectChain">
+			<destination>{5712041c-b15c-4e45-91fb-3cc1647a10d1}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{2f85ba4f-a4a0-41df-8a89-2c44d6ca5e24}</destination>
 		</relationship>
 		<relationship name="output">
 			<destination>{33318255-fc2b-4826-bf4c-176f0eef34b0}</destination>
@@ -455,6 +500,53 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b48f4842-9eba-4585-99e5-8da1fd06c7c4}" />
+	<object class="LFOModulator" id="{9a60b72b-38e9-4d08-93bb-e8bb47f7e78b}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="shape">
+			<value>6</value>
+		</property>
+		<property name="isTempoSync">
+			<value>true</value>
+		</property>
+		<property name="rate">
+			<value>10</value>
+		</property>
+		<property name="beats">
+			<value>0.015625</value>
+		</property>
+		<property name="depth">
+			<value>80</value>
+		</property>
+		<property name="direction">
+			<value>-100</value>
+		</property>
+	</object>
+	<object class="LFOModulator" id="{dd4466d7-48e3-4cfd-a5ba-62ac957d98cc}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="shape">
+			<value>5</value>
+		</property>
+		<property name="rate">
+			<value>0.399999976</value>
+		</property>
+		<property name="depth">
+			<value>80</value>
+		</property>
+		<property name="direction">
+			<value>-100</value>
+		</property>
+	</object>
+	<object class="MixerBusEffectChain" id="{5712041c-b15c-4e45-91fb-3cc1647a10d1}">
+		<relationship name="effects">
+			<destination>{afabeae6-fae6-4a6a-aa54-57241b110c7b}</destination>
+			<destination>{85072ccf-2144-42a8-aea9-2355d52e05ca}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{2f85ba4f-a4a0-41df-8a89-2c44d6ca5e24}" />
 	<object class="MultibandEqEffect" id="{b252eaa7-a7f3-4264-a756-f9248cdabd38}">
 		<property name="filterTypeB">
 			<value>7</value>
@@ -582,7 +674,10 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 	</object>
 	<object class="HighpassEffect" id="{95c207b8-d96c-45f3-aebb-a6a8dd95f2c9}">
 		<property name="cutoff">
-			<value>4200</value>
+			<value>6000</value>
+		</property>
+		<property name="resonance">
+			<value>2.29999995</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{83346ed8-aa56-4c2c-ae64-acb221ca2f64}" />
@@ -793,6 +888,21 @@ Triggered: If Player or Cactus are ignited by GoldWorm.</value>
 		<property name="cutoff">
 			<value>6500</value>
 		</property>
+		<property name="resonance">
+			<value>3.6500001</value>
+		</property>
 	</object>
 	<object class="MixerBusFader" id="{c8f75b7d-9d92-44d9-adf5-32365c346e66}" />
+	<object class="MixerBusFader" id="{afabeae6-fae6-4a6a-aa54-57241b110c7b}" />
+	<object class="MultibandEqEffect" id="{85072ccf-2144-42a8-aea9-2355d52e05ca}">
+		<property name="filterTypeA">
+			<value>5</value>
+		</property>
+		<property name="frequencyA">
+			<value>10653.3301</value>
+		</property>
+		<property name="qualityA">
+			<value>10</value>
+		</property>
+	</object>
 </objects>

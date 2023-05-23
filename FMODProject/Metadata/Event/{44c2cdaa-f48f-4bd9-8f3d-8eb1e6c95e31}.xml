@@ -327,6 +327,7 @@ Triggered: When the Goldworm has taken a certain amount of damage</value>
 	<object class="MixerBusEffectChain" id="{d391578d-634a-45a8-9d16-cc6bb29aad2d}">
 		<relationship name="effects">
 			<destination>{9eba811f-8578-4925-b924-b8898b696fbe}</destination>
+			<destination>{0d7312b2-3bfc-411b-8524-8b468dbe464e}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{cdd68499-7e3f-4f23-846f-5e50d09112d8}">
@@ -428,6 +429,17 @@ Triggered: When the Goldworm has taken a certain amount of damage</value>
 	</object>
 	<object class="MixerBusPanner" id="{198974da-fd27-47b6-8f53-c0b541e8e7b5}" />
 	<object class="MixerBusFader" id="{9eba811f-8578-4925-b924-b8898b696fbe}" />
+	<object class="MultibandEqEffect" id="{0d7312b2-3bfc-411b-8524-8b468dbe464e}">
+		<property name="filterTypeA">
+			<value>11</value>
+		</property>
+		<property name="frequencyA">
+			<value>212.238968</value>
+		</property>
+		<property name="qualityA">
+			<value>0.213113755</value>
+		</property>
+	</object>
 	<object class="MultibandEqEffect" id="{6bc42054-a948-4eab-a35a-361c77b331fc}">
 		<property name="filterTypeB">
 			<value>7</value>
