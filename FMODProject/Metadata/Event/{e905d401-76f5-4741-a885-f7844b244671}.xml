@@ -46,6 +46,7 @@ Triggered: When the feet of the character animation touch the floor.
 			<destination>{629fa54e-b0b1-4e88-a267-3c883b249e26}</destination>
 			<destination>{226e7be5-88c2-43e4-9f79-2146c99c1d87}</destination>
 			<destination>{fa100b5e-e8b2-4fb5-ab00-eacb8862d1f4}</destination>
+			<destination>{a91ecee6-5883-44d8-a55e-397f1a9a817c}</destination>
 		</relationship>
 		<relationship name="returnTracks">
 			<destination>{68fe7c7a-3344-49e2-9dfc-b25b51ff8590}</destination>
@@ -56,6 +57,7 @@ Triggered: When the feet of the character animation touch the floor.
 		</relationship>
 		<relationship name="parameters">
 			<destination>{3541a49a-849e-046f-2c6a-d5f71f548e2b}</destination>
+			<destination>{a8efdd07-7582-4e1b-b441-22f114986b87}</destination>
 		</relationship>
 		<relationship name="banks">
 			<destination>{561cd480-bd2b-4c2e-b919-d775f9c4f409}</destination>
@@ -135,6 +137,17 @@ Triggered: When the feet of the character animation touch the floor.
 			<destination>{d1a2e2aa-b04f-4018-8efb-642482d983ba}</destination>
 		</relationship>
 	</object>
+	<object class="GroupTrack" id="{a91ecee6-5883-44d8-a55e-397f1a9a817c}">
+		<relationship name="automationTracks">
+			<destination>{c2427f6e-3090-4c86-8da6-8d7073bc561d}</destination>
+		</relationship>
+		<relationship name="modules">
+			<destination>{a7dcb09e-4f49-449f-9ad9-38329f66d37a}</destination>
+		</relationship>
+		<relationship name="mixerGroup">
+			<destination>{a6814127-25b8-4094-85c9-775a50c0ad39}</destination>
+		</relationship>
+	</object>
 	<object class="ReturnTrack" id="{68fe7c7a-3344-49e2-9dfc-b25b51ff8590}">
 		<relationship name="mixerReturn">
 			<destination>{51de3434-e723-411a-8be1-79f5a4a2a34f}</destination>
@@ -157,6 +170,14 @@ Triggered: When the feet of the character animation touch the floor.
 		</relationship>
 		<relationship name="preset">
 			<destination>{5decf701-7e48-4848-b796-416ec40eb26c}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProxy" id="{a8efdd07-7582-4e1b-b441-22f114986b87}">
+		<relationship name="modules">
+			<destination>{a7dcb09e-4f49-449f-9ad9-38329f66d37a}</destination>
+		</relationship>
+		<relationship name="preset">
+			<destination>{4ad59307-2c9a-498d-b318-3a35d01c3b9c}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{04ff217a-6838-4446-8254-6239c1ff7e14}">
@@ -389,6 +410,42 @@ Triggered: When the feet of the character animation touch the floor.
 		</relationship>
 		<relationship name="panner">
 			<destination>{8c685df6-7262-4027-8d6f-02f07402e65d}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{04ff217a-6838-4446-8254-6239c1ff7e14}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationTrack" id="{c2427f6e-3090-4c86-8da6-8d7073bc561d}">
+		<relationship name="automator">
+			<destination>{55219a32-ba98-4469-9b91-c2b450e02ce6}</destination>
+		</relationship>
+	</object>
+	<object class="MultiSound" id="{a7dcb09e-4f49-449f-9ad9-38329f66d37a}">
+		<property name="playlistMode">
+			<value>1</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{e696c5b9-09f2-46c0-bb7b-738fa6c6c300}</destination>
+			<destination>{44cdfe7b-bba0-4309-b0e0-64e6b58791c4}</destination>
+		</relationship>
+		<relationship name="sounds">
+			<destination>{8243eca3-1b22-491e-9b06-73b39903617e}</destination>
+			<destination>{d0da5ff7-1fd5-47b8-97ce-15f156889109}</destination>
+			<destination>{ff8536ef-a7c0-4099-814d-94b89f68e043}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{a6814127-25b8-4094-85c9-775a50c0ad39}">
+		<property name="name">
+			<value>Audio 1</value>
+		</property>
+		<relationship name="automators">
+			<destination>{55219a32-ba98-4469-9b91-c2b450e02ce6}</destination>
+		</relationship>
+		<relationship name="effectChain">
+			<destination>{64b7e673-1e0a-4336-a6e3-2f4253316cd4}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{6e8e1e19-7abf-4372-9420-e0176239d656}</destination>
 		</relationship>
 		<relationship name="output">
 			<destination>{04ff217a-6838-4446-8254-6239c1ff7e14}</destination>
@@ -905,6 +962,50 @@ Triggered: When the feet of the character animation touch the floor.
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8c685df6-7262-4027-8d6f-02f07402e65d}" />
+	<object class="RandomizerModulator" id="{e696c5b9-09f2-46c0-bb7b-738fa6c6c300}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>21</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{44cdfe7b-bba0-4309-b0e0-64e6b58791c4}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+	</object>
+	<object class="SingleSound" id="{8243eca3-1b22-491e-9b06-73b39903617e}">
+		<relationship name="audioFile">
+			<destination>{4ceb8668-97db-48d2-8d38-837a76380696}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{d0da5ff7-1fd5-47b8-97ce-15f156889109}">
+		<relationship name="audioFile">
+			<destination>{1cdda928-dc98-481d-bd99-98d79c0a1f3f}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{ff8536ef-a7c0-4099-814d-94b89f68e043}">
+		<relationship name="audioFile">
+			<destination>{6e48b099-eecc-4b67-a094-81baad2606eb}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{55219a32-ba98-4469-9b91-c2b450e02ce6}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{d7563fa6-0f26-43be-988f-db9e3d187531}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{64b7e673-1e0a-4336-a6e3-2f4253316cd4}">
+		<relationship name="effects">
+			<destination>{fc0596ee-2671-488f-b77a-fea4aa7606ac}</destination>
+			<destination>{0c69ae2f-d7b6-45ee-80dd-b7c63554db80}</destination>
+			<destination>{7a16df60-2cdd-4d0b-8bb5-a35807e87488}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{6e8e1e19-7abf-4372-9420-e0176239d656}" />
 	<object class="MixerBusEffectChain" id="{f7def49a-045b-40d2-94e7-0cc52f4f0cac}">
 		<relationship name="effects">
 			<destination>{3e3417f2-544e-41cc-ab4e-cbe23c6c0ae2}</destination>
@@ -975,6 +1076,38 @@ Triggered: When the feet of the character animation touch the floor.
 	</object>
 	<object class="MixerBusFader" id="{010ca9ba-d0a4-4b5b-9e02-f9d6e3603f6f}" />
 	<object class="MixerBusFader" id="{341cabf8-356e-4c78-899f-c1612f539f41}" />
+	<object class="AutomationCurve" id="{d7563fa6-0f26-43be-988f-db9e3d187531}">
+		<relationship name="parameter">
+			<destination>{4ad59307-2c9a-498d-b318-3a35d01c3b9c}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{5a30d0e3-e48f-4883-b468-60314455d774}</destination>
+			<destination>{8c041581-b989-4f0c-b185-539c621bdbd5}</destination>
+		</relationship>
+	</object>
+	<object class="MultibandEqEffect" id="{fc0596ee-2671-488f-b77a-fea4aa7606ac}">
+		<property name="filterTypeB">
+			<value>7</value>
+		</property>
+		<property name="frequencyA">
+			<value>868.36615</value>
+		</property>
+		<property name="frequencyB">
+			<value>12316.0889</value>
+		</property>
+		<property name="qualityA">
+			<value>1.46496558</value>
+		</property>
+		<property name="gainB">
+			<value>3.10344815</value>
+		</property>
+	</object>
+	<object class="LowpassEffect" id="{0c69ae2f-d7b6-45ee-80dd-b7c63554db80}">
+		<property name="cutoff">
+			<value>1950</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{7a16df60-2cdd-4d0b-8bb5-a35807e87488}" />
 	<object class="LowpassEffect" id="{3e3417f2-544e-41cc-ab4e-cbe23c6c0ae2}">
 		<property name="cutoff">
 			<value>160</value>
@@ -992,4 +1125,23 @@ Triggered: When the feet of the character animation touch the floor.
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{0656c7e3-ed67-44c2-a671-d7cb30bb15f4}" />
+	<object class="AutomationPoint" id="{5a30d0e3-e48f-4883-b468-60314455d774}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>-80</value>
+		</property>
+		<property name="curveShape">
+			<value>-1</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{8c041581-b989-4f0c-b185-539c621bdbd5}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
 </objects>
