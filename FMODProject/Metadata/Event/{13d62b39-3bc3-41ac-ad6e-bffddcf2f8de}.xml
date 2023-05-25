@@ -6,7 +6,9 @@
 
 Event Type: 2D
 Location: 0/SeedPile
-Event Triggered: On collision</value>
+Event Triggered: On collision
+-----------------------------------------------------------------------------------
+Seed pickup on UI</value>
 		</property>
 		<property name="name">
 			<value>SeedPickup</value>

@@ -12,7 +12,9 @@ Controlled via right click - 0 - 150+
 
 Event Type: 3D
 Location: 0/Droid/DroidMovementFMODEvent
-Triggered: On Start</value>
+Triggered: On Start
+-----------------------------------------------------------------------------------MOVEMENT- Foley was used.  (Mini Whirlt Tube) to create the sound effect. I really wanted to use this sound as it very effectively communicates movement as movement was needed to create the whirling noise. I then proceeded to add a tremolo, flanger, Reverb and a pitch shifter. The tremolo and flanger were added to add a robotic whirring. The pitch shifter and volume change as the drone picks up speed effectively communicating to the player that the drones velocity is dynamic and changes speed instead of a static speed.
+Spacialiser added to further emphasise the movement</value>
 		</property>
 		<property name="name">
 			<value>Movement</value>

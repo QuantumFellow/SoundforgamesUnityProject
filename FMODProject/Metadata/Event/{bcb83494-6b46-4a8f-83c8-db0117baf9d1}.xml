@@ -7,7 +7,9 @@
 Event Type: 3D
 Location: Prefabs: CactusOne,CactusTwo,CactusThree,CactusFour 
 Triggered: When a seed is fired from the droid and impacts the ground
------------------------------------------------------------------------------------GROW- grow was foley and made by twisting a fake plant. Rumble was a freesound clip as I felt it was appro</value>
+-----------------------------------------------------------------------------------GROW- grow was foley and made by twisting a fake plant. Rumble was a freesound clip as I felt it was appropriate and it  sounded better than the foley I made. This sound really adds to the feel of the cactus actually coming through the ground. The bacon frying noises are short because I wanted to give the illusions of sand spraying as the cactus erupts up through the ground. I then modulated the pitch and volume of the grow sound so that the pitch and volume rises as the castus itself grows. I think this is effective because the sound communicates the feel of something moving up as the pitch moves. Audio 8 (High intensity has a modulated EQ which adjusts the frequency and the gain. This gives the cactus a very organic and crisp sound. It's spacialised because I think it sounds better to position the sound where the cactus grows.
+
+https://freesound.org/people/unfa/sounds/258339/ - Low rumble. Used frequently as sound base and also for the claustrophobic feel of the underground goldworm.</value>
 		</property>
 		<property name="name">
 			<value>Grow</value>
@@ -141,6 +143,9 @@ Triggered: When a seed is fired from the droid and impacts the ground
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{73231f10-283d-4af6-b8ad-7e4d9cfcfc65}">
+		<property name="volume">
+			<value>-2.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{efde0567-b0b1-4387-a01c-699e4d1f4bb9}</destination>
 		</relationship>
@@ -296,9 +301,6 @@ Triggered: When a seed is fired from the droid and impacts the ground
 		</relationship>
 	</object>
 	<object class="EventMixerReturn" id="{182a4ddf-33f3-4f1e-aefd-e382417bdbbc}">
-		<property name="volume">
-			<value>-23.5</value>
-		</property>
 		<property name="name">
 			<value>C</value>
 		</property>

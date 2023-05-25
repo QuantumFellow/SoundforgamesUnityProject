@@ -13,6 +13,7 @@ Intensity: At what stage in the encounter are you
 Event Type: 3D
 Location: 0/GoldSandWormUnderground
 Triggered: On Start
+-----------------------------------------------------------------------------------TUNNELING- I created the base sound 'tunnel' by spreading rice on to paper and draging my finger through it in shapes I think this effect adds shape to the worm's path, rustling (created again with rice but crushing it) was added to sound like the sand parting whilst rumbling was added in with automation at the gold worm gets closer. The volume is ramped up too as it gets closer. Just before the worm pops up there is a silence. This really adds to the suspense and improves player experience by making the scene more dramatic.
 </value>
 		</property>
 		<property name="name">
@@ -290,7 +291,7 @@ Triggered: On Start
 	<object class="MixerBusEffectChain" id="{9e7b2e90-5063-4d20-b31e-84150b3138ec}">
 		<relationship name="effects">
 			<destination>{53c9b076-55d7-457a-a67c-64e5cbed55d5}</destination>
-			<destination>{f3c23c70-6095-49d3-9db4-eba881dfbcd0}</destination>
+			<destination>{2311ca6a-a8f7-472e-a94b-c0a84ce86e06}</destination>
 			<destination>{970f5e33-b610-4bf2-9399-214d0dbcbb23}</destination>
 		</relationship>
 	</object>
@@ -354,7 +355,7 @@ Triggered: On Start
 			<value>0.20465517</value>
 		</property>
 	</object>
-	<object class="SpatialiserEffect" id="{f3c23c70-6095-49d3-9db4-eba881dfbcd0}">
+	<object class="SpatialiserEffect" id="{2311ca6a-a8f7-472e-a94b-c0a84ce86e06}">
 		<property name="minimumDistance">
 			<value>0</value>
 		</property>

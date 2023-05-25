@@ -6,7 +6,8 @@
 
 Event Type: 3D
 Location: 0/RadiationZone
-Triggered: Upon getting to within a certain distance to the radiation zone</value>
+Triggered: Upon getting to within a certain distance to the radiation zone
+-----------------------------------------------------------------------------------CONTAMINATION- This sound heavily relies on the use of the scatterer instrument. I recorded a series of clicks in Foley as I felt it gave a richer sound than the ones I was able to find on freesound and also added some white noise as you approach the contaminated site. As you approach the spawn rate increases and the white noises volume increases. I used the white noise to really convey the contamination and disturbance you get as you get closer. I heavily drew on the sounds of actual geiger counters, I like that the sounds produced have a varied pitch and rate as its every time a single particle is red. The different varied clicks in this sound emulate that clicking and sporadic chance of pace quite well. Relying accurately on real world apparatus ludically helps the player and allows them to understand that the area is contaminated and dangerous.</value>
 		</property>
 		<property name="name">
 			<value>Player Geiger Counter</value>

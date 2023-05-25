@@ -18,7 +18,8 @@ If you pick up seeds:
 SeedPickUp
 
 Event Type: 2D
-Location: 0/Managers/GameManager/GameManager/cs (instance)</value>
+Location: 0/Managers/GameManager/GameManager/cs (instance)
+-----------------------------------------------------------------------------------UI- These were all created in my puredata Alarm. I separated out the sounds and used them because they are synthetic. This takes it out of the natural landscape and makes for good non-diegetic sound cues. Each one is different so as previously mentioned on switch tools it is good for the visually impaired (if thinking accessibility wise) and each one has no randomised pitch or volume so allows for the player to recognise and familiarise themself with the ui. Each similar function has a similar sound to it the pause menu is pitched up as people tend to corresponding a higher pitch to something being turned on (see xbox start up noise and power down noise) as you resume a lower pitch is played to tell the player something has been disabled (pause menu) this works with the other corresponding sounds OpenMenu and CloseMenu. The compendium was made using the Octave divider and I find it adds to the Robot's charm, allowing the player to become attached.</value>
 		</property>
 		<property name="color">
 			<value>Purple Light 1</value>

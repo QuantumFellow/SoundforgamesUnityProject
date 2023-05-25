@@ -6,7 +6,11 @@
 
 Event Type: 3D
 Location: Prefab PlayerProjectile
-Triggered: When the droid fires its laser</value>
+Triggered: When the droid fires its laser
+-----------------------------------------------------------------------------------
+Octave Divider built in Puredata and m,y own voice used.
+
+LASER- Added a tremolo for a more robotic and synthetic sound. It also has a spacializer, it makes the robot more dynamicas it can whizz around and fire into far away surfaces. I think this sound is very effective</value>
 		</property>
 		<property name="name">
 			<value>Laser</value>

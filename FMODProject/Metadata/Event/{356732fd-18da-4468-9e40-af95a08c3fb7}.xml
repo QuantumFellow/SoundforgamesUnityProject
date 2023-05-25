@@ -6,7 +6,8 @@
 
 Event Type: 3D
 Location: Prefab PlayerSeedProjectile 
-Triggered: When the droid fires a seed</value>
+Triggered: When the droid fires a seed
+-----------------------------------------------------------------------------------FIRE SEED- I added a muffle to the pew sound Just because I wanted it to blend more into the organic sound of the cactus growing. The pew on the laser is harsher as its meant to cause damage. This one is a little softer to show off the organic-ness of the growing</value>
 		</property>
 		<property name="name">
 			<value>FireSeed</value>

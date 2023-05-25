@@ -7,7 +7,8 @@
 
 Event Type: 3D
 Event Location: 0/Droid/DroidRotationFMODEvent
-Triggered: On Start</value>
+Triggered: On Start
+-----------------------------------------------------------------------------------ROTATION- I felt as if I didn't need to add anything here I'm very happy with the Robot's movement sounds and the velocity is dynamic enough. I felt as if adding something here would muddy the audio and take away from the experience.</value>
 		</property>
 		<property name="name">
 			<value>Rotation</value>

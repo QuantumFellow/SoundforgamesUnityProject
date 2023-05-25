@@ -6,7 +6,8 @@
 
 Event Type: 3D
 Location: 0/Droid/DroidChitChatFMODEvent
-Triggered: Randomly every 15 - 20 seconds.</value>
+Triggered: Randomly every 15 - 20 seconds.
+-----------------------------------------------------------------------------------CHITCHAT- I wanted the robot to come across as charming and endearing but also synthetic in it's sounds so I made the sounds digitally but using my voice I added cute chirps and quips so that it appears more human (Saying stuff like 'weeeee' and 'nah nah'. I used the Octave Divider and my own recordings to create robot noises. Each animation has a multi instrument containing 4 sounds so 20 sounds in total. There is a pitch randomiser too just to add some difference and so that the player doesn't get bored of the sound</value>
 		</property>
 		<property name="name">
 			<value>ChitChat</value>
@@ -124,6 +125,9 @@ Triggered: Randomly every 15 - 20 seconds.</value>
 	</object>
 	<object class="MixerBusPanner" id="{418c4fc3-461a-4cac-9e78-135153cbfe7f}" />
 	<object class="MultiSound" id="{27cd3043-e028-481d-835f-88bd4c2e362f}">
+		<relationship name="modulators">
+			<destination>{56db11da-5a77-4cc1-8eb9-ee35d3a384eb}</destination>
+		</relationship>
 		<relationship name="sounds">
 			<destination>{2934ef34-8116-4e1f-a3e2-ad79ce0aa4c2}</destination>
 			<destination>{7af42d24-f783-477e-89e2-c8db98d3af7d}</destination>
@@ -135,6 +139,9 @@ Triggered: Randomly every 15 - 20 seconds.</value>
 		<property name="start">
 			<value>1</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{fbd33a3c-759c-4752-a055-0614c1c3fa50}</destination>
+		</relationship>
 		<relationship name="sounds">
 			<destination>{2ef96c55-18a2-4049-bbce-731c425828be}</destination>
 			<destination>{876a0708-14d1-4c27-a256-6c61439898dd}</destination>
@@ -146,6 +153,9 @@ Triggered: Randomly every 15 - 20 seconds.</value>
 		<property name="start">
 			<value>2</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{29fbfd9d-a956-4b86-92e6-005030cb7d02}</destination>
+		</relationship>
 		<relationship name="sounds">
 			<destination>{76b55411-6813-4437-b5dc-bb43e59de9cc}</destination>
 			<destination>{9e48f9fa-ecac-4f82-92b6-b7d4d47c8609}</destination>
@@ -171,6 +181,9 @@ Triggered: Randomly every 15 - 20 seconds.</value>
 		<property name="start">
 			<value>4</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{86a8b89d-36f3-40b6-9aba-45ad7d934709}</destination>
+		</relationship>
 		<relationship name="sounds">
 			<destination>{42a0f12a-37d7-4db4-a06a-53d379355b33}</destination>
 			<destination>{7b629f1d-3e60-467e-b97e-d5dc72033552}</destination>
@@ -203,6 +216,14 @@ Triggered: Randomly every 15 - 20 seconds.</value>
 	</object>
 	<object class="MixerBusPanner" id="{2acc291b-4449-42ae-9ce5-7a9a9a6f5fd7}" />
 	<object class="MixerBusFader" id="{a884a833-02ed-44a4-8f57-0b1a9ed4e0aa}" />
+	<object class="RandomizerModulator" id="{56db11da-5a77-4cc1-8eb9-ee35d3a384eb}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>10.416666</value>
+		</property>
+	</object>
 	<object class="SingleSound" id="{2934ef34-8116-4e1f-a3e2-ad79ce0aa4c2}">
 		<relationship name="audioFile">
 			<destination>{24775454-e969-4d38-8de3-0ae111c2c019}</destination>
@@ -223,6 +244,14 @@ Triggered: Randomly every 15 - 20 seconds.</value>
 			<destination>{b8d705af-6198-4100-90c9-0bc2b6417c4d}</destination>
 		</relationship>
 	</object>
+	<object class="RandomizerModulator" id="{fbd33a3c-759c-4752-a055-0614c1c3fa50}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>10.416666</value>
+		</property>
+	</object>
 	<object class="SingleSound" id="{2ef96c55-18a2-4049-bbce-731c425828be}">
 		<relationship name="audioFile">
 			<destination>{74a3ad0b-54b6-465b-a456-b0172156ea48}</destination>
@@ -242,6 +271,14 @@ Triggered: Randomly every 15 - 20 seconds.</value>
 		<relationship name="audioFile">
 			<destination>{887e9729-2dee-4904-a26b-f8782ec76878}</destination>
 		</relationship>
+	</object>
+	<object class="RandomizerModulator" id="{29fbfd9d-a956-4b86-92e6-005030cb7d02}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>10.416666</value>
+		</property>
 	</object>
 	<object class="SingleSound" id="{76b55411-6813-4437-b5dc-bb43e59de9cc}">
 		<property name="volume">
@@ -302,6 +339,14 @@ Triggered: Randomly every 15 - 20 seconds.</value>
 		<relationship name="audioFile">
 			<destination>{9bf10346-ce4a-456b-8937-cec40d35810b}</destination>
 		</relationship>
+	</object>
+	<object class="RandomizerModulator" id="{86a8b89d-36f3-40b6-9aba-45ad7d934709}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>10.416666</value>
+		</property>
 	</object>
 	<object class="SingleSound" id="{42a0f12a-37d7-4db4-a06a-53d379355b33}">
 		<relationship name="audioFile">

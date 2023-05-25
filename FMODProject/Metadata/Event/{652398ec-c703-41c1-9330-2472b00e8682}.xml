@@ -8,7 +8,10 @@ Animation Length: 1.35 seconds
 
 Event Type: 3D
 Location: Prefab GoldSandworm/Bone01/Bone02/Bone03/Bone04/FMODGoldWormPopUpSound
-Triggered: When the Goldworm surfaces</value>
+Triggered: When the Goldworm surfaces
+-----------------------------------------------------------------------------------POP UP- First of all the sounds on pop down the automation has been reversed on the EQs which ties the two sounds together effectively. It also feels like something moving upwards as opposed to the other. 
+
+The screeches are all layered. I added 3 that were all different to really give that dynamic layered effect. These were all recorded on my home mic. White noise has been added so try and blend the sound better. Even though comb filtering might happen in this sound as the sounds are being sent but also played I feel it is effective at layering the screech, This could be effective as it allows the sound to be more disjointed and disorientating which can really add to the inhuman feel of thiis monster. Chitter and chatter are again added in </value>
 		</property>
 		<property name="name">
 			<value>GoldWormPopUp</value>

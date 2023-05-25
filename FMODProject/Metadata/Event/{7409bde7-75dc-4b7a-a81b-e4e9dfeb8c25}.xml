@@ -9,6 +9,8 @@ Animation Length: 1.38 seconds
 Event Type: 3D
 Location: Prefab GoldSandworm/Bone01/Bone02/Bone03/Bone04/FMODGoldWormPopDownSound
 Triggered: When the Goldworm goes underground
+-----------------------------------------------------------------------------------POP DOWN- Rain frying and rumble are effective as it sounds like sand falling and the earth being disturbed. Impact was created by me hitting my desk and pitching it down. Reverb was added to add the spray of dirt. Rain frying has an automated EQ as well as on impact. I think the crackling really fits the sound and the dull noise adds to the feel of the gold worm submerging
+
 </value>
 		</property>
 		<property name="name">

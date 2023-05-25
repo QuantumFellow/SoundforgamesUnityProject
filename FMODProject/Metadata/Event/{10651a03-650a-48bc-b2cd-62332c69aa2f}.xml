@@ -8,7 +8,8 @@ The attack length is 2.05 seconds
 
 Event Type: 3D
 Location: Prefab GoldSandworm/Bone01/Bone02/Bone03/Bone04/FMODGoldWormAttackSound
-Triggered: When Goldworm attacks.</value>
+Triggered: When Goldworm attacks.
+-----------------------------------------------------------------------------------ATTACK- Breathe fire is my voice recorded on my home mic. I passed it through some passes and an EQ. Each one adds a different layer. Audio 2 is a lot lower and I think this acts well to create a sound more dynamic. The frying was added for a crackle of fire. The coloured blue audio is passed into a send  which adds a tremolo and a pitch shifter. This adds the trill noise I wanted for the gold worm. Chitter and chatter are added in again for the sound to feel more attached to the gold worm as every noise the gold worm has (above ground) has that same insect sound.</value>
 		</property>
 		<property name="name">
 			<value>GoldWormFireAttack</value>
@@ -198,7 +199,7 @@ Triggered: When Goldworm attacks.</value>
 			<value>Blue</value>
 		</property>
 		<property name="volume">
-			<value>-14</value>
+			<value>-80</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -238,7 +239,7 @@ Triggered: When Goldworm attacks.</value>
 			<value>Blue</value>
 		</property>
 		<property name="volume">
-			<value>-26.5</value>
+			<value>-80</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>

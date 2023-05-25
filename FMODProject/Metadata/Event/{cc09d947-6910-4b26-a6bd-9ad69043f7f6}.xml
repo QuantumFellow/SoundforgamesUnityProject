@@ -10,7 +10,7 @@ The 'TreeRotation' refers to the motion of the tree where its bubble leaves wiil
 Event Type: 3D:
 Location: 0/Procedural/ProceduralTreeManager.cs (instance)
 Triggered: On Start
-</value>
+-----------------------------------------------------------------------------------TREE- I added volume automation as the tree grows and as the tree rotates it fades in and out of producing a twisting sound. You helped me add another automated EQ and I toned it down a little but I really like the effect. The noise fading in and out really makes me thinking of something straining to twist from one point to another. When its at either resting point there is no twisting</value>
 		</property>
 		<property name="name">
 			<value>Tree</value>
@@ -38,7 +38,6 @@ Triggered: On Start
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{5065241c-a83f-4fd0-8364-291b09498fd2}</destination>
-			<destination>{11d11c2c-7885-447e-89df-761b3097fc0d}</destination>
 		</relationship>
 		<relationship name="timeline">
 			<destination>{04bcbe18-9498-4c45-b2d5-48b102df3d2f}</destination>
@@ -97,11 +96,6 @@ Triggered: On Start
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{9e917f3e-60fd-446e-acc3-75d29b9af5fa}</destination>
-		</relationship>
-	</object>
-	<object class="GroupTrack" id="{11d11c2c-7885-447e-89df-761b3097fc0d}">
-		<relationship name="mixerGroup">
-			<destination>{2b7be075-948f-4cf4-9de5-987a0667c1c4}</destination>
 		</relationship>
 	</object>
 	<object class="Timeline" id="{04bcbe18-9498-4c45-b2d5-48b102df3d2f}" />
@@ -182,23 +176,6 @@ Triggered: On Start
 			<destination>{fd573a82-6bf9-4d30-ba8a-c0f83c36414b}</destination>
 		</relationship>
 	</object>
-	<object class="EventMixerGroup" id="{2b7be075-948f-4cf4-9de5-987a0667c1c4}">
-		<property name="volume">
-			<value>-13.5</value>
-		</property>
-		<property name="name">
-			<value>Audio 1</value>
-		</property>
-		<relationship name="effectChain">
-			<destination>{6f7e0029-d458-49c5-8a33-9e335342106c}</destination>
-		</relationship>
-		<relationship name="panner">
-			<destination>{feb07aa4-7724-4a16-8a70-e1a4635c62e2}</destination>
-		</relationship>
-		<relationship name="output">
-			<destination>{fd573a82-6bf9-4d30-ba8a-c0f83c36414b}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusEffectChain" id="{600cfa15-6e4c-4ac3-8fe1-15330b152a2f}">
 		<relationship name="effects">
 			<destination>{3657aba6-85cd-4882-8e4c-ba6d7d125a91}</destination>
@@ -242,12 +219,6 @@ Triggered: On Start
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8c7302a6-9956-4548-8f43-c31ecc7749ea}" />
-	<object class="MixerBusEffectChain" id="{6f7e0029-d458-49c5-8a33-9e335342106c}">
-		<relationship name="effects">
-			<destination>{fe049205-bf0e-4d31-88f8-d3536e5dd415}</destination>
-		</relationship>
-	</object>
-	<object class="MixerBusPanner" id="{feb07aa4-7724-4a16-8a70-e1a4635c62e2}" />
 	<object class="MixerBusFader" id="{3657aba6-85cd-4882-8e4c-ba6d7d125a91}" />
 	<object class="SpatialiserEffect" id="{944ea29e-6e5b-4786-8d55-ed98e262e991}">
 		<property name="minimumDistance">
@@ -301,7 +272,7 @@ Triggered: On Start
 		</relationship>
 		<relationship name="automationPoints">
 			<destination>{54ba52dc-b6d4-4210-a7bb-e45d2576aee1}</destination>
-			<destination>{12279f18-23a6-4c5b-85e3-ee95ba45b697}</destination>
+			<destination>{ad6d565b-6c9d-48c0-85f1-ec84c4abbd26}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{8a3f2b02-f578-43ee-9b60-26a0e8d68129}" />
@@ -313,7 +284,6 @@ Triggered: On Start
 			<destination>{90cee06a-ef65-4bbb-9e88-a7b82cbcfed9}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusFader" id="{fe049205-bf0e-4d31-88f8-d3536e5dd415}" />
 	<object class="AutomationPoint" id="{54ba52dc-b6d4-4210-a7bb-e45d2576aee1}">
 		<property name="position">
 			<value>0</value>
@@ -325,12 +295,12 @@ Triggered: On Start
 			<value>-0.174058512</value>
 		</property>
 	</object>
-	<object class="AutomationPoint" id="{12279f18-23a6-4c5b-85e3-ee95ba45b697}">
+	<object class="AutomationPoint" id="{ad6d565b-6c9d-48c0-85f1-ec84c4abbd26}">
 		<property name="position">
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>-2</value>
+			<value>5</value>
 		</property>
 	</object>
 	<object class="Automator" id="{90cee06a-ef65-4bbb-9e88-a7b82cbcfed9}">

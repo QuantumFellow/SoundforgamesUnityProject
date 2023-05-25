@@ -8,7 +8,9 @@ Animation Length: 4.20 seconds
 
 Event Type: 3D
 Location: Prefab GoldSandworm/Bone01/Bone02/Bone03/Bone04/FMODGoldWormDeathSound
-Triggered: When the Goldworm has taken a certain amount of damage</value>
+Triggered: When the Goldworm has taken a certain amount of damage
+------------------------------------------------------------------------------------
+DIE- Added rustling and white noise as the animation shows the goldworm falling to the floor. Death noise was created by me recorded on my home mic and I pitched it right down Chitter and chatter keep the insect feel and it all fades off so that the Ambient Music is ready to fade back in</value>
 		</property>
 		<property name="name">
 			<value>GoldWormDie</value>

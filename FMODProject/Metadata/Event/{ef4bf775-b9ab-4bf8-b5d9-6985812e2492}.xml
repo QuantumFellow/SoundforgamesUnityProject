@@ -9,7 +9,7 @@ If these objects are struck by the fire particle system from the goldworm they w
 Event Type: 3D
 Location: Prefab Fire01
 Triggered: If Player or Cactus are ignited by GoldWorm.
------------------------------------------------------------------------------------FIRE- Made with Foley of crisp packet, had some soft crinkling into my home mic, added some harsher crackles in a scatterer</value>
+-----------------------------------------------------------------------------------FIRE- Made with Foley of crisp packet, had some soft crinkling into my home mic, added some harsher crackles in a scatterer for more variety and texture. I blew softly into the mic for a good firey base. There are two crackle_base one for the higher crackles and the other for lower crackles.. again to add more of a layer and texture to the sound. You helped me add the white noise for more hissing and  I think it adds to the texture and improves the overall experience</value>
 		</property>
 		<property name="name">
 			<value>OnFire</value>

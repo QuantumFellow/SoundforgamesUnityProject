@@ -9,7 +9,8 @@ The scan time is 3 seconds
 Event Type: 3D
 Location: 0/Droid/DroidBehaviour.cs (Instance)
 Triggered: When scanning a cactus
-
+-----------------------------------------------------------------------------------
+SCAN- This sound was made using a PureData Instrument I coded to make an alarm tone I really liked the versatility of it and think I effectively created a good scan with the use of a pitch shifter being automated. I added a confirmation beep to so the player is aware of the scan finishing. This improves the ludic aspects as it communicates when the action is done but I think it adds narratively as the sound is sympathetic toward the games theme.
 </value>
 		</property>
 		<property name="name">
@@ -207,6 +208,7 @@ Triggered: When scanning a cactus
 	<object class="MixerBusEffectChain" id="{b4fdc058-ce1f-4134-9c64-d9e896808ece}">
 		<relationship name="effects">
 			<destination>{c3ddc81d-4a97-4c3a-a6be-504705885265}</destination>
+			<destination>{0dfc71df-db6e-4d2e-8655-cbe82f207098}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{099a20c7-94b4-40b3-8c62-bdb9c6220d2e}">
@@ -239,6 +241,14 @@ Triggered: When scanning a cactus
 	</object>
 	<object class="MixerBusPanner" id="{7c95c0c6-7b09-4a28-938c-340224c1312d}" />
 	<object class="MixerBusFader" id="{c3ddc81d-4a97-4c3a-a6be-504705885265}" />
+	<object class="SpatialiserEffect" id="{0dfc71df-db6e-4d2e-8655-cbe82f207098}">
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>50</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{f8df021a-fd6c-40a1-89da-5ed950561871}">
 		<property name="position">
 			<value>1.6000000000000001</value>

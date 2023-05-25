@@ -6,13 +6,15 @@
 
 Event Type: 3D
 Location: 0/Droid/DroidAlertedFmodEvent
-Triggered: Upon getting to within a certain distance of the radiation zone</value>
+Triggered: Upon getting to within a certain distance of the radiation zone
+-----------------------------------------------------------------------------------
+ALERTED- I made this sound using my own voice and an Octave Divider coded on PureData. All of the robot noises are made with my voice and modulated with PureData. The Alarm only sounds for a little bit as I really wanted the player's attention on the GoldWorm. I also wanted to have a more subtle transition between the Ambient Music and the GoldWorm fight. </value>
 		</property>
 		<property name="name">
 			<value>Alerted</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{0315ad32-2855-432c-8399-cc7b48807503}</destination>
@@ -230,6 +232,7 @@ Triggered: Upon getting to within a certain distance of the radiation zone</valu
 		<relationship name="effects">
 			<destination>{45cc230f-0da7-4caa-a620-5a8f80b054f7}</destination>
 			<destination>{23238a93-7936-4739-99cf-fe6e6ce0d55d}</destination>
+			<destination>{d04bfe60-48ef-43e5-8547-05d5662a3949}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{2ce85e62-503f-497b-81bb-34e68b4ac3df}" />
@@ -254,6 +257,11 @@ Triggered: Upon getting to within a certain distance of the radiation zone</valu
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{23238a93-7936-4739-99cf-fe6e6ce0d55d}" />
+	<object class="SpatialiserEffect" id="{d04bfe60-48ef-43e5-8547-05d5662a3949}">
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{5e1597b6-d2a0-4f5e-a0af-dd46b046fc47}">
 		<property name="position">
 			<value>6.4000000000000004</value>

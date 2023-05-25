@@ -6,7 +6,9 @@
 
 Event Type: 3D
 Location: Prefab PlayerProjectile/PlayerProjectileBehaviour.cs (instance)
-Triggered: On Collision</value>
+Triggered: On Collision
+-----------------------------------------------------------------------------------PROJECTILES-
+ Added rock footsteps as I really like the feel they give. I used rice in my water bottle for the shoots_sandbase sound, hitting it against my palm. I then used that sound across the board, adjusting lowpasses and EQs for each one. I added after burn which was created when recording for my foley fire. This adds a nice singeing sound to whatever the laser hits sounding like its scortched the surface. I added the sound effects of the fleshy peach (used in wet footsteps) to reuse the foley I already have and because I thought it matched the sound well. Each of the metal, sand and rock have the footsteps, The plant also has its ground sound effect. I think its good to use the same sounds from other sounds on the surfaces as it groups them all together and frovides familiarity with the surface</value>
 		</property>
 		<property name="name">
 			<value>PlayerProjectileHit</value>
@@ -433,6 +435,9 @@ Triggered: On Collision</value>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{419d96e9-daad-4e86-b669-cd33772c985f}">
+		<property name="volume">
+			<value>-9</value>
+		</property>
 		<property name="name">
 			<value>Audio 5</value>
 		</property>
@@ -458,6 +463,9 @@ Triggered: On Collision</value>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{0ea76db6-9eef-45a0-bca6-dfe25d334396}">
+		<property name="volume">
+			<value>-8</value>
+		</property>
 		<property name="name">
 			<value>Audio 6</value>
 		</property>

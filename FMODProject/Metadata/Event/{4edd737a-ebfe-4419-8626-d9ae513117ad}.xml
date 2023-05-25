@@ -6,7 +6,8 @@
 
 Event Type: 3D
 Location: 0/Droid/DroidToolChangeFMODEvent
-Triggered: When switching tool</value>
+Triggered: When switching tool
+-----------------------------------------------------------------------------------SWITCH TOOL- After asking for advice it was suggested I pitch the tool chirps differently. I think its a good idea so that each tool is regognisable by lighting but also by sound. It also makes it more accessible for those visually impaired as well. I didn't add pitch randomisers to this so that the sounds again are memorable.</value>
 		</property>
 		<property name="name">
 			<value>SwitchTool</value>

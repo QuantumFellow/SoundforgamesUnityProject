@@ -8,7 +8,8 @@ Animation Length: 1.19 seconds
 
 Event Type: 3D
 Location: Prefab GoldSandworm/Bone01/Bone02/Bone03/Bone04/FMODGoldWormDamagedSound
-Triggered: When the Goldworm takes a certain number of laser hits</value>
+Triggered: When the Goldworm takes a certain number of laser hits
+-----------------------------------------------------------------------------------DMGED- Chitter and chatter were made from fingertapping and a chh sound made by me I used them throughout the goldworm's sounds for the insect-like trilling. The monsters hurt noise was made by me again. I added two so that one could act as a lower base to the sound. Doubling it over gives it a more unusual and alien sound. The rain frying and the rumbles were added for the ground sounds. Including the ground noises blends the gold worm to its surroundings providing good synchresis to the event.</value>
 		</property>
 		<property name="name">
 			<value>GoldWormDamaged</value>

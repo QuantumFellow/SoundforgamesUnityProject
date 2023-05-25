@@ -16,8 +16,11 @@ Event Type: 3D
 Location: 0/Player/Player.cs (Instance)
 Triggered: When the feet of the character animation touch the floor.
 --------------------------------------------------------------------------------
-Added around 20 diff footsteps (recorded in foley room) per surface and a pitch randomiser to givbe variety. To add coherence to the footsteps I added clothing noises recorded at home. Our Rock Footsteps were too
-</value>
+Added around 20 diff footsteps (recorded in foley room) per surface and a pitch randomiser to givbe variety. To add coherence to the footsteps I added clothing noises recorded at home. Our Rock Footsteps were too pebbly and not smooth enough to fit with the smooth rock surfaces so instead I used a smooth sound from Freesound. I used the foley room for the sand and metal footsteps. I added an EQ and a Low Pass to the Metal footsteps to reduce the harshness and on the stone, I added a Low Pass and High Pass to the stone to get them to the point where they sounded light enough for the character.
+
+In the Foley we used hands in boots and added cloth to the sand to allow some softer versions of footsteps. I feel like this allowed us to create some footsteps for the characters gait.
+
+Master EQ was added to all of them. The footsteps are offset slightly on ROCK and SAND as I felt the footsteps needed to be shortened to match the animation better. I also decided to add a parameter in which the rain effects all of the footsteps. (again for coherence much like the clothing). When it begins to rain a multi instrument that has some squelch sound foley from a peach being torn open. You are able to hear a subtle change in the game and I really like the subtlety in this detail. It all just adds to the synchresis of the sound and the game.</value>
 		</property>
 		<property name="name">
 			<value>Player Footsteps</value>
@@ -275,7 +278,7 @@ Added around 20 diff footsteps (recorded in foley room) per surface and a pitch 
 	</object>
 	<object class="EventMixerGroup" id="{d8ca3b9d-fb95-47e7-bbc5-686d7757d54d}">
 		<property name="volume">
-			<value>-5</value>
+			<value>-80</value>
 		</property>
 		<property name="name">
 			<value>Rock</value>
@@ -427,8 +430,8 @@ Added around 20 diff footsteps (recorded in foley room) per surface and a pitch 
 			<value>1</value>
 		</property>
 		<relationship name="modulators">
-			<destination>{e696c5b9-09f2-46c0-bb7b-738fa6c6c300}</destination>
 			<destination>{44cdfe7b-bba0-4309-b0e0-64e6b58791c4}</destination>
+			<destination>{fee311be-a0f0-4fab-9420-8ba9f42c983e}</destination>
 		</relationship>
 		<relationship name="sounds">
 			<destination>{8243eca3-1b22-491e-9b06-73b39903617e}</destination>
@@ -964,17 +967,17 @@ Added around 20 diff footsteps (recorded in foley room) per surface and a pitch 
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8c685df6-7262-4027-8d6f-02f07402e65d}" />
-	<object class="RandomizerModulator" id="{e696c5b9-09f2-46c0-bb7b-738fa6c6c300}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>pitch</value>
-		</property>
-		<property name="amount">
-			<value>21</value>
-		</property>
-	</object>
 	<object class="RandomizerModulator" id="{44cdfe7b-bba0-4309-b0e0-64e6b58791c4}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>3.5</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{fee311be-a0f0-4fab-9420-8ba9f42c983e}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
 		</property>
 	</object>
 	<object class="SingleSound" id="{8243eca3-1b22-491e-9b06-73b39903617e}">
